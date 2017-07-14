@@ -1,0 +1,20 @@
+{
+  "name": "portfolio_site",
+  "version": "1.0.0",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-uglify": "~0.5.0",
+    "grunt-contrib-handlebars": "~1.0",
+    "grunt-postcss": "~0.8",
+    "autoprefixer": "~7.1.2",
+    "grunt-pixrem": "0.1.2",
+    "grunt-cssnano": "2.1.0"
+  },
+  "description": "jasper dudley portfolio site",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jasper dudley and reed trevelyan",
+  "license": "ISC"
+}

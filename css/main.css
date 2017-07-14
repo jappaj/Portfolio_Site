@@ -1,0 +1,146 @@
+body {
+    min-width: 300px;
+}
+
+#name-digital {
+    font-family: 'Cousine', sans-serif;
+    position: absolute;
+    margin-top: 4vh;
+    margin-left: 45vw;
+    width: 1px;
+    word-wrap: break-word;
+    line-height: 1.4em;
+    color: green;
+    font-size: 2vw;
+}
+
+#name-print {
+    font-family: 'Cousine', sans-serif;    
+    position: absolute;
+    width: 1px;
+    word-wrap: break-word;
+    margin-top: 4vh;
+    margin-left: 3.5vw;
+    color: black;
+    line-height: 1.4em;
+    font-size: 2vw;
+    text-align: justify;
+}
+
+.left-content {
+    float:left;
+    width: 50%;
+    height: 99vh;
+    color: white;
+    letter-spacing: -3px;
+    background-color: #242126;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3.5vw;
+}
+
+.right-content {
+    float: left;
+    background-color: #efeae7;
+    width: 50%;
+    height: 99vh;
+    font-family: 'Lora', serif;
+    font-size: 6vw;
+    letter-spacing: 0.1vw;
+}
+
+.center-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.centered-text {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 99vh;
+}
+
+.floating-text {
+    position: relative;
+}
+
+.floating-text div span {
+    position: absolute;
+    margin-top: -49.5vh;
+}
+
+#left-blend span {
+    mix-blend-mode: screen;
+}
+
+#right-blend span {
+    mix-blend-mode: multiply;
+}
+
+#red {
+    color: #ff0000;
+    z-index: 2;
+}
+
+#green {
+    color: #00ff00;
+    z-index: 3;
+}
+
+#blue {
+    color: #0000ff;
+    z-index: 4;
+}
+
+#cyan {
+    color: #00ffff;
+    z-index: 2;
+}
+
+#magenta {
+    color: #ff00ff;
+    z-index: 3;
+}
+
+#yellow {
+    color: #ffff00;
+    z-index: 4;
+}
+
+.bottom-bar {
+    height: 1vh;
+    background-color: #aaaaaa;
+}
+
+.barsplit {
+    float: left;
+    height: inherit;
+    width: 16.6666%;
+}
+
+#barsplit-1 {
+    background-color: #dd0000
+}
+
+#barsplit-2 {
+    background-color: #00dd00
+}
+
+#barsplit-3 {
+    background-color: #0000dd
+}
+
+#barsplit-4 {
+    background-color: #00dddd
+}
+
+#barsplit-5 {
+    background-color: #dd00dd
+}
+
+#barsplit-6 {
+    background-color: #dddd00
+}
+
