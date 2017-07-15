@@ -2,14 +2,16 @@
   "name": "portfolio_site",
   "version": "1.0.0",
   "devDependencies": {
+    "autoprefixer": "~7.1.2",
+    "cssnano": "~3.10.0",
     "grunt": "~0.4.5",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-handlebars": "~1.0",
     "grunt-contrib-jshint": "~0.10.0",
     "grunt-contrib-uglify": "~0.5.0",
-    "grunt-contrib-handlebars": "~1.0",
     "grunt-postcss": "~0.8",
-    "autoprefixer": "~7.1.2",
-    "grunt-pixrem": "0.1.2",
-    "grunt-cssnano": "2.1.0"
+    "pixrem": "~4.0.1"
   },
   "description": "jasper dudley portfolio site",
   "scripts": {
