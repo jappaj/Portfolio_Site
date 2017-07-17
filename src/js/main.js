@@ -3,6 +3,7 @@
 //TODO: Create new normalize function that uses exponential movement between values
 // use .position() instead of autistic get functions
 // move helpers into one object to be imported from separate document
+// query type of input device, do something with a touchscreen. scroll based?
 //use offsetAngle as input angle value
 //normalizeInRange using 0, 5, offsetAngle ratio to determine polar coordinate offset of elements
 //convert polar to cartesian using polar offset and absolute distance
