@@ -5,26 +5,22 @@ body {
 #name-digital {
     font-family: 'Cousine', sans-serif;
     position: absolute;
-    margin-top: 4vh;
-    margin-left: 45vw;
-    width: 1px;
-    word-wrap: break-word;
-    line-height: 1.4em;
-    color: green;
-    font-size: 2vw;
+    right: 50vw;
+    margin-top: 3vh;
+    margin-right: 1vw;
+    letter-spacing: 5px;
+    color: white;
+    font-size: 1.5vw;
 }
 
 #name-print {
     font-family: 'Cousine', sans-serif;    
     position: absolute;
-    width: 1px;
-    word-wrap: break-word;
-    margin-top: 4vh;
-    margin-left: 3.5vw;
+    margin-top: 3vh;
+    margin-left: 1vw;
+    letter-spacing: 5px;
     color: black;
-    line-height: 1.4em;
-    font-size: 2vw;
-    text-align: justify;
+    font-size: 1.5vw;
 }
 
 .left-content {

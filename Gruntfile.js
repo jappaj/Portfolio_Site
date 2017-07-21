@@ -9,7 +9,7 @@ module.exports = function(grunt) {
       },
       
       build: {
-        src: 'src/js/main.js',
+        src: 'build/build.js',
         dest: 'build/<%= pkg.name %>.min.js'
       }
     },
@@ -27,24 +27,43 @@ module.exports = function(grunt) {
           }
       },
       concat: {
-          dist: {
+          css: {
               src: 'src/css/*.css',
               dest: 'build/build.css'
-          }
+          },
+          js: {
+              src: 'src/js/*.js',
+              dest: 'build/build.js',
+              options: {
+                  banner: '$(function() {',
+                  footer: '});'
+              }
+          },
       },
-      clean: ['build/build.css'],
-      handlebars: {
-          
+      clean: {
+          css: ['build/build.css'],
+          js: ['build/build.js']  
+      },
+      watch: {
+          css: {
+              files: ['src/css/*.css'],
+              tasks: ['concat:css', 'postcss', 'clean:css']
+          },
+          js: {
+              files: ['src/js/*.js'],
+              tasks: ['concat:js', 'uglify', 'clean:js']
+          }
       }
+      
   });
 
   // Load the plugin that provides the "uglify" task.
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-postcss');
-  grunt.loadNpmTasks('grunt-contrib-handlebars');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task(s).
-  grunt.registerTask('default', ['uglify', 'concat', 'postcss', 'clean', 'handlebars']);
+  grunt.registerTask('default', ['concat', 'uglify', 'postcss', 'clean']);
 };

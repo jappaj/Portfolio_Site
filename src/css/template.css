@@ -40,6 +40,34 @@ body {
     }
 }
 
+.header-bar {
+    position: fixed;
+    width: 50vw;
+    height: 8vh;
+    background-color: #242126;
+}
+
+.inside-text {
+    font-family: 'Cousine', sans-serif;
+    float: right;
+    margin-top: 3vh;
+    margin-right: 1vw;
+    letter-spacing: 5px;
+    color: white;
+    font-size: 1.5vw;
+}
+
+.header-fade-text {
+    font-family: 'Cousine', sans-serif;    
+    position: absolute;
+    left: 50vw;
+    margin-top: 3vh;
+    margin-left: 1vw;
+    letter-spacing: 5px;
+    color: black;
+    font-size: 1.5vw;
+}
+
 .project-title {
     float: right;
     text-align: right;
@@ -48,7 +76,7 @@ body {
 }
 
 .column-center {
-    padding-top: 10vh;
+    padding-top: 12vh;
     width: 100vw;
 }
 
@@ -66,6 +94,7 @@ body {
 
 .nw-registration img {
     position: absolute;
+    mix-blend-mode: multiply;
 }
 
 .se-registration {
@@ -77,4 +106,17 @@ body {
 
 .se-registration img {
     position: absolute;
+    mix-blend-mode: multiply;
+}
+
+.registration-cyan {
+    fill: #00ffff;
+}
+
+.registration-magenta {
+    fill: #ff00ff;
+}
+
+.registration-yellow {
+    fill: #ffff00;
 }
