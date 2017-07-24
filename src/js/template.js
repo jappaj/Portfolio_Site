@@ -1,4 +1,10 @@
-//TODO: modify registration effect doc to invert direction of registration mark effect
+//TODO: 
+// add mustache to the build pipeline
+// mustache templateData.json template.mustache | Out-File -en utf8 ../../test4.html
+// make a low-res to high-res image loader based on mouseover
+// build image carousels
+// on pageload, only load low-res previews of first images
+// on mouseover, load hi-res image and next two images
 // REMEMBER: remove jQuery wrapper when finished with development
 
 $(function() {
@@ -28,7 +34,7 @@ $(window).on('scroll', function() {
 });
     //end fade function
     
-    applyRegistrationEffect([regNwCyan, regNwMagenta, regNwYellow], function(nwReg) {
+    /* applyRegistrationEffect([regNwCyan, regNwMagenta, regNwYellow], function(nwReg) {
         var nwRegPosX = nwReg.offset().left;
         var nwRegWidth = nwReg.width();
 
@@ -38,7 +44,7 @@ $(window).on('scroll', function() {
         var nwRegHeight = nwReg.height();
 
         return nwRegPosY + (nwRegHeight / 2);
-    }.bind(this, nwReg), 12, 12, (1 / 2));
+    }.bind(this, nwReg), 12, 12, (1 / 4), true);
 
     applyRegistrationEffect([regSeCyan, regSeMagenta, regSeYellow], function(seReg) {
         var seRegPosX = seReg.offset().left;
@@ -50,5 +56,24 @@ $(window).on('scroll', function() {
         var seRegHeight = seReg.height();
 
         return seRegPosY + (seRegHeight / 2);
-    }.bind(this, seReg), 12, 12, (1 / 2));   
+    }.bind(this, seReg), 12, 12, (1 / 4), true);  */
+    
+    $( ".nw-registration, .se-registration").each(function() {
+        $(this).each(function() {
+            console.log($(this).children("img"));
+            applyRegistrationEffect(
+                $(this).children("img"), function() {
+                    var nwRegPosX = $(this).offset().left;
+                    var nwRegWidth = $(this).width();
+
+                    return nwRegPosX + (nwRegWidth / 2);
+                }.bind(this), function() {
+                    var nwRegPosY = $(this).offset().top;
+                    var nwRegHeight = $(this).height();
+
+                    return nwRegPosY + (nwRegHeight / 2);
+                }.bind(this), 12, 12, (1 / 4), true
+            );
+        });
+    }); 
 });

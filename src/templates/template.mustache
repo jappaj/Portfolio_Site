@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Jasper Dudley</title>
+        <link href="https://fonts.googleapis.com/css?family=Lora|Press+Start+2P|Cousine" rel="stylesheet">        
+        <link rel="stylesheet" href="build/portfolio_site.min.css">
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Jasper Dudley Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="src/js/registration-effect.js"></script>
+        <script src="src/js/template.js"></script>
+
+    </head>
+    <body>
+        <div class="main-content">
+            <div class="header-left">
+                <div class="header-bar">
+                    <span class="inside-text">
+                        jasper
+                    </span>
+                    <div class="inside-menu">
+                        
+                    </div>
+                </div>
+                <div class="outside-text">
+                    <span class="header-fade-text">
+                        dudley
+                    </span>
+                </div>
+            </div>
+            <div class="column-center">
+                {{#projects}}
+                <div class="project-container">
+                    <div class="nw-registration">
+                        <img src="img/regCyan.png" class="registration-cyan">
+                        <img src="img/regMagenta.png" class="registration-magenta">
+                        <img src="img/regYellow.png" class="registration-yellow">
+                    </div>
+                    <img class="project-image"
+                         src="{{imgSrc}}"
+                         alt="{{imgTitle}}"
+                         title="{{imgTitle}}">
+                    <span class="project-title">
+                        {{projectTitle}}
+                    </span>
+                    <div class="se-registration">
+                        <img src="img/regCyan.png" class="registration-cyan">
+                        <img src="img/regMagenta.png" class="registration-magenta">
+                        <img src="img/regYellow.png" class="registration-yellow">
+                    </div>
+                </div>
+                {{/projects}}
+            </div>
+        </div>
+    </body>
+</html>

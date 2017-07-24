@@ -8,28 +8,35 @@
  * @param {number} maxXPercentDiff Defines the maximum percent difference of x axis movement.
  * @param {number} maxYPercentDiff Defines the maximum percent difference of y axis movement.
  * @param {number} maxDistanceRatio Ratio of window height as max distance to activate effect. e.g: 1/3.
+ * @param {boolean} reverse If true, the direction of the registration effect is inverted.
  */
-function applyRegistrationEffect(elements, centerX, centerY, maxXPercentDiff, maxYPercentDiff, maxDistanceRatio) {
+function applyRegistrationEffect(elements, centerXFunc, centerYFunc, maxXPercentDiff, maxYPercentDiff, maxDistanceRatio, reverse) {
     if (elements.length != 3) {
         throw "Must use exactly three (3) elements";
     }
 
-    var digitalX = centerX();
-    var digitalY = centerY();
+    var centerX = centerXFunc();
+    var centerY = centerYFunc();
 
-    var w = elements[0];
-    var ne = elements[1];
-    var se = elements[2];
+    var w = $(elements[0]);
+    var ne = $(elements[1]);
+    var se = $(elements[2]);
 
-    w.css("transform", "translate(-" + (50 + maxXPercentDiff) + "%)");
-    ne.css("transform", "translate(-" + (50 - maxXPercentDiff) + "%, " + (-maxYPercentDiff) + "%)");
-    se.css("transform", "translate(-" + (50 - maxXPercentDiff) + "%, " + (maxYPercentDiff) + "%)");
-
+    if(reverse) {
+        w.css("transform", "translate(-" + (50) + "%)");
+        ne.css("transform", "translate(-" + (50) + "%)");
+        se.css("transform", "translate(-" + (50) + "%");
+    } else {
+        w.css("transform", "translate(-" + (50 + maxXPercentDiff) + "%)");
+        ne.css("transform", "translate(-" + (50 - maxXPercentDiff) + "%, " + (-maxYPercentDiff) + "%)");
+        se.css("transform", "translate(-" + (50 - maxXPercentDiff) + "%, " + (maxYPercentDiff) + "%)");
+    };
+    
     var maxDistance = $( window ).height() * maxDistanceRatio;
 
     $( window ).resize(function() {
-        digitalX = centerX();
-        digitalY = centerY();
+        centerX = centerXFunc();
+        centerY = centerYFunc();
         maxDistance = $( window ).height() * maxDistanceRatio;
     });
 
@@ -38,11 +45,19 @@ function applyRegistrationEffect(elements, centerX, centerY, maxXPercentDiff, ma
         var x = event.pageX;
         var y = event.pageY;
 
-        var distance = getDistance(x, y, digitalX, digitalY);
+        var distance = getDistance(x, y, centerX, centerY);
+        
+        if (reverse) {
+            distance = maxDistance - distance
+        };
+        
         var ratio = distance > maxDistance ? 1.0 : distance / maxDistance;
+        
+        
+        // console.log(distance);
 
-        var normalizedX = x - digitalX;
-        var normalizedY = -y + digitalY;
+        var normalizedX = x - centerX;
+        var normalizedY = -y + centerY;
         var offsetAngle = angleFromPoint(normalizedX, normalizedY);
         // console.log(offsetAngle);
 

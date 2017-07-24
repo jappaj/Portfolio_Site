@@ -1,0 +1,30 @@
+{
+    "projects": [
+        {
+            "imgSrc": "img/Print/CHANNELS/Rail.jpg",
+            "imgTitle": "CHANNELS - Rail",
+            "projectTitle": "CHANNELS"
+        },
+        {
+            "imgSrc": "img/Print/Helios/Helios_Rotor.jpg",
+            "imgTitle": "Helios Guidebook Closeup - Rotor",
+            "projectTitle": "Helios Brand Guidebook"
+        },
+        {
+            "imgSrc": "img/Print/ModernArtifacts/M.A_Can.jpg",
+            "imgTitle": "Modern Artifacts Closeup - Can",
+            "projectTitle": "Modern Artifacts"
+        },
+        {
+            "imgSrc": "img/Print/Boomerang/Boomerang_Spread.jpg",
+            "imgTitle": "Boomerang Closeup - Spread",
+            "projectTitle": "The Boomerang"
+        },
+        
+        {
+            "imgSrc": "img/Print/UrT/UrT_1.jpg",
+            "imgTitle": "UrT Location Image",
+            "projectTitle": "UrT"
+        }
+    ]
+}
