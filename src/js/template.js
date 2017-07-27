@@ -5,6 +5,7 @@
 // build image carousels
 // on pageload, only load low-res previews of first images
 // on mouseover, load hi-res image and next two images
+// add parrallax based movement to mobile version?
 // REMEMBER: remove jQuery wrapper when finished with development
 
 $(function() {
@@ -33,6 +34,16 @@ $(window).on('scroll', function() {
    }
 });
     //end fade function
+    
+$('.image-container').slick({
+    fade: true,
+    arrows: true,
+    dots: true,
+    focusOnSelect: true,
+    swipeToSlide: true,
+    zIndex: 20
+    
+});
     
     /* applyRegistrationEffect([regNwCyan, regNwMagenta, regNwYellow], function(nwReg) {
         var nwRegPosX = nwReg.offset().left;
