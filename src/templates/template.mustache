@@ -5,6 +5,9 @@
         <title>Jasper Dudley | Print</title>
         <link href="https://fonts.googleapis.com/css?family=Lora|Press+Start+2P|Cousine" rel="stylesheet">        
         <link rel="stylesheet" href="build/portfolio_site.min.css">
+<!--        build out-->
+        <link rel="stylesheet" href="slick-1.6.0/slick/slick.css">
+        <link rel="stylesheet" href="slick-1.6.0/slick/slick-theme.css">
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Jasper Dudley Portfolio</title>
@@ -12,25 +15,13 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="src/js/registration-effect.js"></script>
         <script src="src/js/template.js"></script>
+<!--        build out-->
+        <script type="text/javascript" src="slick-1.6.0/slick/slick.js"></script>
 
     </head>
-    <body>
+    <body class="body-{{pageType}}">
         <div class="main-content">
-            <div class="header-left">
-                <div class="header-bar">
-                    <span class="inside-text">
-                        jasper
-                    </span>
-                    <div class="inside-menu">
-                        
-                    </div>
-                </div>
-                <div class="outside-text">
-                    <span class="header-fade-text">
-                        dudley
-                    </span>
-                </div>
-            </div>
+            {{> header}}
             <div class="column-center">
                 {{#projects}}
                 <div class="project-container">

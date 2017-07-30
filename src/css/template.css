@@ -3,8 +3,12 @@
     
 */
 
-body {
-    background-color: #efeae7;
+.body-digital {
+    background-color: #242126 !important;
+}
+
+.body-print {
+    background-color: #efeae7 !important;
 }
 
 @media (max-width: 944px) {
@@ -54,39 +58,74 @@ body {
     position: fixed;
     width: 50vw;
     height: 8vh;
-    background-color: #242126;
     z-index: 0;
+}
+
+.header-bar-print {
+    background-color: #242126;
+}
+
+.header-bar-digital {
+    right: 0;
+    background-color: #efeae7;
 }
 
 .inside-text {
     font-family: 'Cousine', sans-serif;
-    float: right;
     margin-top: 3vh;
-    margin-right: 1vw;
     letter-spacing: 5px;
-    color: white;
     font-size: 1.5vw;
+}
+
+.inside-text-print {
+    float: right;
+    margin-right: 1vw;
+    color: white;
+}
+
+.inside-text-digital {
+    float: left;
+    margin-left: 1vw;
+    color: black;
 }
 
 .inside-menu {
     font-family: 'Cousine', sans-serif;
-    float: left;
     margin-top: 3vh;
-    margin-left: 1vw;
-    color: white;
     letter-spacing: 5px;
     font-size: 1.5vw;
+}
+
+.inside-menu-print {
+    float: left;
+    margin-left: 1vw;
+    color: white;
+}
+
+.inside-menu-digital {
+    float: right;
+    margin-right: 1vw;
+    color: black;
 }
 
 .header-fade-text {
     font-family: 'Cousine', sans-serif;    
     position: absolute;
-    left: 50vw;
     margin-top: 3vh;
-    margin-left: 1vw;
     letter-spacing: 5px;
-    color: black;
     font-size: 1.5vw;
+}
+
+.header-fade-text-digital {
+    right: 50vw;
+    margin-right: 1vw;
+    color: white;
+}
+
+.header-fade-text-print {
+    left: 50vw;
+    margin-left: 1vw;
+    color: black;
 }
 
 .project-title {
@@ -96,6 +135,14 @@ body {
     margin-top: -10px;
     margin-right: 14px;
     padding-bottom: 15vh;
+}
+
+.project-title-digital {
+    color: white;
+}
+
+.project-title-print {
+    color: black;
 }
 
 .column-center {

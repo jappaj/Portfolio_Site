@@ -16,29 +16,8 @@
                 }
             ],
             "projectTitle": "CHANNELS"
-        }/*,
-        
-        {
-            "imgSrc": "img/Print/Helios/Helios_Rotor960.jpg",
-            "imgTitle": "Helios Guidebook Closeup - Rotor",
-            "projectTitle": "Helios Brand Guidebook"
-        },
-        {
-            "imgSrc": "img/Print/ModernArtifacts/M.A_Can960.jpg",
-            "imgTitle": "Modern Artifacts Closeup - Can",
-            "projectTitle": "Modern Artifacts"
-        },
-        {
-            "imgSrc": "img/Print/Boomerang/Boomerang_Spread960.jpg",
-            "imgTitle": "Boomerang Closeup - Spread",
-            "projectTitle": "The Boomerang"
-        },
-        
-        {
-            "imgSrc": "img/Print/UrT/UrT960.jpg",
-            "imgTitle": "UrT Location Image",
-            "projectTitle": "UrT"
-        }*/
+        }
     ],
-    "footerType": "print"
+    "pageType": "print",
+    "pageTypePrint": true
 }

@@ -3,3 +3,4 @@ build/
 img/
 test*
 slick-1.6.0/
+src/html-test/*.html
