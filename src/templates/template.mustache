@@ -39,10 +39,14 @@
                         <img src="img/regMagenta.png" class="registration-magenta">
                         <img src="img/regYellow.png" class="registration-yellow">
                     </div>
-                    <img class="project-image"
-                         src="{{imgSrc}}"
-                         alt="{{imgTitle}}"
-                         title="{{imgTitle}}">
+                    <div class="image-container">
+                        {{#carousel}}
+                        <img class="project-image"
+                             src="{{imgSrc}}"
+                             alt="{{imgTitle}}"
+                             title="{{imgTitle}}">
+                        {{/carousel}}
+                    </div>
                     <span class="project-title">
                         {{projectTitle}}
                     </span>

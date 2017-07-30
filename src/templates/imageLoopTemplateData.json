@@ -1,23 +1,10 @@
 {
     "projects": [
         {
-            "carousel": [
-                {
-                    "imgSrc": "img/Print/CHANNELS/Sea/Sea960.jpg",
-                    "imgTitle": "CHANNELS - Sea"
-                },
-                {
-                    "imgSrc": "img/Print/CHANNELS/Road/Road960.jpg",
-                    "imgTitle": "CHANNELS - Road"
-                },
-                {
-                    "imgSrc": "img/Print/CHANNELS/Rail/Rail960.jpg",
-                    "imgTitle": "CHANNELS - Rail"
-                }
-            ],
+            "imgSrc": "img/Print/CHANNELS/Rail/Rail960.jpg",
+            "imgTitle": "CHANNELS - Rail",
             "projectTitle": "CHANNELS"
         },
-        
         {
             "imgSrc": "img/Print/Helios/Helios_Rotor960.jpg",
             "imgTitle": "Helios Guidebook Closeup - Rotor",

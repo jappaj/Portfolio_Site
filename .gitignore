@@ -2,3 +2,4 @@ node_modules/
 build/
 img/
 test*
+slick-1.6.0/
