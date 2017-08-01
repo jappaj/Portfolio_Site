@@ -10,7 +10,7 @@ body {
     margin-right: 1vw;
     letter-spacing: 5px;
     color: white;
-    font-size: 1.5vw;
+    font-size: calc(12px + 0.8vw);
 }
 
 #name-print {
@@ -20,7 +20,7 @@ body {
     margin-left: 1vw;
     letter-spacing: 5px;
     color: black;
-    font-size: 1.5vw;
+    font-size: calc(12px + 0.8vw);
 }
 
 .left-content {

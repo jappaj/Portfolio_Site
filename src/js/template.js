@@ -37,11 +37,12 @@ $(window).on('scroll', function() {
     
 $('.image-container').slick({
     fade: true,
+    adaptiveHeight: true,
     arrows: true,
     dots: true,
     focusOnSelect: true,
     swipeToSlide: true,
-    zIndex: 20
+    zIndex: 1
     
 });
     

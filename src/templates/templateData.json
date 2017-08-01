@@ -16,6 +16,94 @@
                 }
             ],
             "projectTitle": "CHANNELS"
+        },
+        {
+            "carousel": [
+                {
+                    "imgSrc": "img/Print/Helios/Helios_Rotor960.jpg",
+                    "imgTitle": "Helios - Rotor Closeup"
+                },
+                {
+                    "imgSrc": "img/Print/Helios/Helios_Look960.jpg",
+                    "imgTitle": "Helios - Look Closeup"
+                },
+                {
+                    "imgSrc": "img/Print/Helios/Helios_Logo960.jpg",
+                    "imgTitle": "Helios - Logo Closeup"
+                },
+                {
+                    "imgSrc": "img/Print/Helios/Helios_Colors960.jpg",
+                    "imgTitle": "Helios - Color Closeup"
+                },
+                {
+                    "imgSrc": "img/Print/Helios/Helios_Cards960.jpg",
+                    "imgTitle": "Helios - Business Cards Closeup"
+                },
+                {
+                    "imgSrc": "img/Print/Helios/Helios_Spine960.jpg",
+                    "imgTitle": "Helios - Guidebook Spine Closeup"
+                }
+            ],
+            "projectTitle": "Helios Guidebook"
+        },
+        {
+            "carousel": [
+                {
+                    "imgSrc": "img/Print/ModernArtifacts/M.A_Open960.jpg",
+                    "imgTitle": "Modern Artifacts - Open"
+                },
+                {
+                    "imgSrc": "img/Print/ModernArtifacts/M.A_Cover960.jpg",
+                    "imgTitle": "Modern Artifacts - Cover"
+                },
+                {
+                    "imgSrc": "img/Print/ModernArtifacts/M.A_Can960.jpg",
+                    "imgTitle": "Modern Artifacts - Can"
+                },
+                {
+                    "imgSrc": "img/Print/ModernArtifacts/M.A_Wrapper960.jpg",
+                    "imgTitle": "Modern Artifacts - Wrapper"
+                },
+                {
+                    "imgSrc": "img/Print/ModernArtifacts/M.A_Cards960.jpg",
+                    "imgTitle": "Modern Artifacts - Cards Index"
+                },
+                {
+                    "imgSrc": "img/Print/ModernArtifacts/M.A_Colophon960.jpg",
+                    "imgTitle": "Modern Artifacts - Colophon"
+                }
+            ],
+            "projectTitle": "Modern Artifacts"
+        },
+        {
+            "carousel": [
+                {
+                    "imgSrc": "img/Print/Boomerang/Boomerang_Cover960.jpg",
+                    "imgTitle": "The Boomerang - Cover"
+                },
+                {
+                    "imgSrc": "img/Print/Boomerang/Boomerang_Center960.jpg",
+                    "imgTitle": "The Boomerang - Binding"
+                },
+                {
+                    "imgSrc": "img/Print/Boomerang/Boomerang_Spread960.jpg",
+                    "imgTitle": "The Boomerang - Spread"
+                }
+            ],
+            "projectTitle": "The Boomerang"
+        },
+        {
+            "carousel": [
+                {
+                    "imgSrc": "img/Print/UrT/UrT960.jpg",
+                    "imgTitle": "UrT - Location Image"
+                },
+                {
+                    "imgSrc": "img/Print/UrT/UrT_work960.jpg",
+                    "imgTitle": "UrT - Studio Image"
+                }
+            ],
+            "projectTitle": "UrT"
         }
     ],
     "pageType": "print",
