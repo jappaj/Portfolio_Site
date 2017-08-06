@@ -72,36 +72,33 @@
             "projectTitle": "Neon"
         },
         {
-            "carousel": [
+            "iframeProject": [
                 {
-                    "imgSrc": "img/Digital/Boomerang/Boomerang_Cover960.jpg",
-                    "imgTitle": "The Boomerang - Cover"
+                    "iframeType": "iframe-soundcloud",
+                    
+                    "iframeSource":  "width='100%' height='450' scrolling='no' frameborder='no' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/334812444&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true'"
                 },
                 {
-                    "imgSrc": "img/Digital/Boomerang/Boomerang_Center960.jpg",
-                    "imgTitle": "The Boomerang - Binding"
-                },
-                {
-                    "imgSrc": "img/Digital/Boomerang/Boomerang_Spread960.jpg",
-                    "imgTitle": "The Boomerang - Spread"
+                    "iframeType": "iframe-soundcloud",
+                    
+                    "iframeSource": "width='100%' height='450' scrolling='no' frameborder='no' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/334810383&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true'"
                 }
             ],
-            "projectTitle": "The Boomerang"
+            "projectTitle": "Sound Design"
         },
         {
-            "carousel": [
+            "iframeProject": [
                 {
-                    "imgSrc": "img/Digital/UrT/UrT960.jpg",
-                    "imgTitle": "UrT - Location Image"
-                },
-                {
-                    "imgSrc": "img/Digital/UrT/UrT_work960.jpg",
-                    "imgTitle": "UrT - Studio Image"
+                    "iframeType": "iframe-vimeo",
+                    
+                    "iframeSource": "src='https://player.vimeo.com/video/184799084' width='100%' height='360' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen"
                 }
             ],
-            "projectTitle": "UrT"
+            "projectTitle": "Anthology of Swiss Music",
+            
+            "vimeoBuffer": "true"
         }
     ],
     "pageType": "digital",
-    "pageTypePrint": false
+    "pageTypeDigital": "true"
 }

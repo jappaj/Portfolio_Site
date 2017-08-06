@@ -37,7 +37,14 @@
                              alt="{{imgTitle}}"
                              title="{{imgTitle}}">
                         {{/carousel}}
+                        {{#iframeProject}}
+                            <iframe class="{{iframeType}}" {{& iframeSource}}>
+                            </iframe>
+                        {{/iframeProject}}
                     </div>
+                    {{#vimeoBuffer}}
+                        <div class="vimeo-buffer"></div>
+                    {{/vimeoBuffer}}
                     <div class="se-registration">
                         <img src="img/regCyan.png" class="registration-cyan">
                         <img src="img/regMagenta.png" class="registration-magenta">
