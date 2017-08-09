@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Jasper Dudley | About Me</title>
+        <link href="https://fonts.googleapis.com/css?family=Lora|Press+Start+2P|Cousine" rel="stylesheet">        
+        <link rel="stylesheet" href="build/portfolio_site.min.css">
+<!--        build out-->
+        <link rel="stylesheet" href="slick-1.6.0/slick/slick.css">
+        <link rel="stylesheet" href="slick-1.6.0/slick/slick-theme.css">
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="src/js/registration-effect.js"></script>
+        <script src="src/js/template.js"></script>
+<!--        build out-->
+        <script type="text/javascript" src="slick-1.6.0/slick/slick.js"></script>
+
+    </head>
+    <body class="body-{{pageType}}">
+        <div class="main-content">
+            {{> header}}
+            <div class="column-center">
+                <div class="project-container">
+                    <div class="nw-registration">
+                        <img src="img/regCyan.png" class="registration-cyan">
+                        <img src="img/regMagenta.png" class="registration-magenta">
+                        <img src="img/regYellow.png" class="registration-yellow">
+                    </div>
+                    <div class="image-container">
+                        {{#carousel}}
+                        <img class="project-image"
+                             src="{{imgSrc}}"
+                             alt="{{imgTitle}}"
+                             title="{{imgTitle}}">
+                        {{/carousel}}
+                        {{#iframeProject}}
+                            <iframe class="{{iframeType}}" {{& iframeSource}}>
+                            </iframe>
+                        {{/iframeProject}}
+                    </div>
+                    {{#vimeoBuffer}}
+                        <div class="vimeo-buffer"></div>
+                    {{/vimeoBuffer}}
+                    <div class="se-registration">
+                        <img src="img/regCyan.png" class="registration-cyan">
+                        <img src="img/regMagenta.png" class="registration-magenta">
+                        <img src="img/regYellow.png" class="registration-yellow">
+                    </div>
+                    <span class="project-title project-title-{{pageType}}">
+                        {{projectTitle}}
+                    </span>
+                    <span class="project-description project-description-{{pageType}}">
+                        {{projectDescription}}
+                    </span>
+                </div>
+            </div>
+        </div>
+        {{> footer}}
+    </body>
+</html>
