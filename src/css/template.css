@@ -12,11 +12,11 @@
 }
 
 @media (max-width: 944px) {
-    .project-container {
+    .project-container .about-container {
         padding-top: calc(22px + 0.8vw);
         width: 100%; 
     }
-    .project-image {
+    .project-image .about-image {
         width: 100%; 
     }
     .nw-registration {
@@ -38,10 +38,10 @@
 }
 
 @media (min-width: 944px) and (max-width: 1000px) {
-    .project-container {
+    .project-container .about-container {
         width: 944px;
     }
-    .project-image {
+    .project-image .about-image {
         width: 100%;
     }
     .nw-registration {
@@ -59,10 +59,10 @@
 }
 
 @media (min-width: 1000px) {
-    .project-container {
+    .project-container .about-container {
         width: 944px;
     }
-    .project-image {
+    .project-image .about-image {
         width: 100%;
     }
 }

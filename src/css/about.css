@@ -1,0 +1,39 @@
+@media (max-width: 480px) {
+    .about-container {
+        width: 100%; 
+    }
+    .about-image {
+        width: 100%; 
+    }
+}
+
+@media (min-width: 480px) {
+    .about-container {
+        width: 480px;
+    }
+    .about-image {
+        width: 480px;
+    }
+}
+
+.column-center {
+    width: 100%;
+}
+
+.about-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: calc(25px + 2.5vw);
+}
+
+.about-text-box {
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 14px;
+}
+
+.about-text {
+    font-family: "Cousine", sans-serif;
+    line-height: 13px;
+    letter-spacing: 1px;
+}
