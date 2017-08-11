@@ -12,11 +12,11 @@
 }
 
 @media (max-width: 944px) {
-    .project-container .about-container {
+    .project-container, .about-container {
         padding-top: calc(22px + 0.8vw);
         width: 100%; 
     }
-    .project-image .about-image {
+    .project-image, .about-image {
         width: 100%; 
     }
     .nw-registration {
@@ -38,10 +38,10 @@
 }
 
 @media (min-width: 944px) and (max-width: 1000px) {
-    .project-container .about-container {
+    .project-container, .about-container {
         width: 944px;
     }
-    .project-image .about-image {
+    .project-image, .about-image {
         width: 100%;
     }
     .nw-registration {
@@ -59,10 +59,10 @@
 }
 
 @media (min-width: 1000px) {
-    .project-container .about-container {
+    .project-container, .about-container {
         width: 944px;
     }
-    .project-image .about-image {
+    .project-image, .about-image {
         width: 100%;
     }
 }
@@ -87,11 +87,27 @@
     background-color: #efeae7;
 }
 
-.inside-text {
+.inside-text, .home-text, .about-text, .pipe-text {
     font-family: 'Cousine', sans-serif;
     margin-top: 3vh;
     letter-spacing: 5px;
     font-size: calc(12px + 0.8vw);
+}
+
+.home-text-print, .about-text-print, .pipe-text-print {
+    text-align: left;
+}
+
+.home-text-digital, .about-text-digital, .pipe-text-digital {
+    text-align: right;
+}
+
+.home-text, .about-text, .pipe-text {
+    opacity: 0.20;
+}
+
+.home-text:hover, .about-text:hover {
+    opacity: 0.85;
 }
 
 .inside-text-print {
@@ -193,9 +209,14 @@
     margin-left: -16px;
 }
 
-.nw-registration img {
+.nw-registration-print img {
     position: absolute;
     mix-blend-mode: multiply;
+}
+
+.nw-registration-digital img {
+    position: absolute;
+    mix-blend-mode: screen;
 }
 
 .se-registration {
@@ -206,9 +227,14 @@
     margin-top: -30px;
 }
 
-.se-registration img {
+.se-registration-print img {
     position: absolute;
     mix-blend-mode: multiply;
+}
+
+.se-registration-digital img {
+    position: absolute;
+    mix-blend-mode: screen;
 }
 
 .registration-cyan {
@@ -221,4 +247,24 @@
 
 .registration-yellow {
     fill: #ffff00;
+}
+
+.registration-red {
+    fill: #ff0000;
+}
+
+.registration-green {
+    fill: #00ff00;
+}
+
+.registration-blue {
+    fill: #0000ff;
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+    font-size: 30px !important;
+    opacity: 1 !important;
+    color: #666666 !important;
 }

@@ -100,5 +100,8 @@
         }
     ],
     "pageType": "digital",
-    "pageTypeDigital": "true"
+    "pageTypeDigital": "true",
+    "color1": "red",
+    "color2": "green",
+    "color3": "blue"
 }
