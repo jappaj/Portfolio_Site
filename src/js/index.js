@@ -1,7 +1,4 @@
-//TODO: Create new normalize function that uses exponential movement between values
-// use .position() instead of autistic get functions
-// query type of input device, do something with a touchscreen. scroll based?
-// rgb digital text selectors
+//TODO: 
 var red = $( "#red" );
 var green = $( "#green" );
 var blue = $( "#blue" );

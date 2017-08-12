@@ -22,6 +22,10 @@
             
             "carousel": [
                 {
+                    "imgSrc": "img/Digital/WildTame/Comp/Wild+Tame_COMP480.jpg",
+                    "imgTitle": "Wild & Tame - Composite"
+                },
+                {
                     "imgSrc": "img/Digital/WildTame/Car/Car960.jpg",
                     "imgTitle": "Wild & Tame - Car"
                 },
@@ -44,10 +48,6 @@
                 {
                     "imgSrc": "img/Digital/WildTame/Shed/Shed960.jpg",
                     "imgTitle": "Wild & Tame - Shed"
-                },
-                {
-                    "imgSrc": "img/Digital/WildTame/Comp/Comp480.jpg",
-                    "imgTitle": "Wild & Tame - Composite"
                 }
             ],
             "projectTitle": "Wild & Tame"

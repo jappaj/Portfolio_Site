@@ -34,10 +34,19 @@ function applyRegistrationEffect(elements, centerXFunc, centerYFunc, maxXPercent
     
     var maxDistance = $( window ).height() * maxDistanceRatio;
 
-    $( window ).resize(function() {
+    $( window ).on("resize", function() {
         centerX = centerXFunc();
         centerY = centerYFunc();
         maxDistance = $( window ).height() * maxDistanceRatio;
+    });
+    
+    $( '.image-container' ).on("lazyLoaded", function() {
+//        Horrible Hack (Never Forgetti)
+        window.setTimeout(function() {
+            centerX = centerXFunc();
+            centerY = centerYFunc();
+            maxDistance = $( window ).height() * maxDistanceRatio;
+        }, 3000);
     });
 
     $( document ).on("mousemove", function( event ) {

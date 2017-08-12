@@ -31,10 +31,12 @@
                     </div>
                     <div class="image-container {{multiContainer}}">
                         {{#carousel}}
-                        <img class="project-image"
-                             src="{{imgSrc}}"
-                             alt="{{imgTitle}}"
-                             title="{{imgTitle}}">
+                        <div>
+                            <img class="project-image"
+                                 src="{{imgSrc}}"
+                                 alt="{{imgTitle}}"
+                                 title="{{imgTitle}}">
+                        </div>
                         {{/carousel}}
                         {{#iframeProject}}
                             <iframe class="{{iframeType}}" {{& iframeSource}}>
