@@ -1,10 +1,10 @@
 ## MVP To Do:
-* add single pages for each individual project
+* ~~add single pages for each individual project~~
 * add full-resolution image on click on project pages
-* use slick native lazy loading
+* ~~use slick native lazy loading~~
 * google analytics
 
-* fix mobile version
+* ~~fix mobile version~~
 
 * add hyperlinks between pages
 * update all css/js links to use build files

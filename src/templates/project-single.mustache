@@ -14,8 +14,11 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="src/js/registration-effect.js"></script>
         <script src="src/js/template.js"></script>
+        <script src="src/js/individual.js"></script>
 <!--        build out-->
         <script type="text/javascript" src="slick-1.6.0/slick/slick.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
 
     </head>
     <body class="body-{{pageType}}">
@@ -30,9 +33,10 @@
                     </div>
                     <div class="image-container {{multiContainer}}">
                         {{#carousel}}
-                        <div>
+                        <div class="magnific-wrapper">
                             <img class="project-image"
                                  src="{{imgSrc}}"
+                                 href="{{HRimgSrc}}"
                                  alt="{{imgTitle}}"
                                  title="{{imgTitle}}">
                         </div>

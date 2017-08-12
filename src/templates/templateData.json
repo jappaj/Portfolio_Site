@@ -4,14 +4,17 @@
             "carousel": [
                 {
                     "imgSrc": "img/Print/CHANNELS/Sea/Sea960.jpg",
+                    "HRimgSrc": "img/Print/CHANNELS/Sea/Sea1920.jpg",
                     "imgTitle": "CHANNELS - Sea"
                 },
                 {
                     "imgSrc": "img/Print/CHANNELS/Road/Road960.jpg",
+                    "HRimgSrc": "img/Print/CHANNELS/Road/Road1920.jpg",
                     "imgTitle": "CHANNELS - Road"
                 },
                 {
                     "imgSrc": "img/Print/CHANNELS/Rail/Rail960.jpg",
+                    "HRimgSrc": "img/Print/CHANNELS/Rail/Rail1920.jpg",
                     "imgTitle": "CHANNELS - Rail"
                 }
             ],
