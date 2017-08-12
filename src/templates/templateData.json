@@ -15,7 +15,8 @@
                     "imgTitle": "CHANNELS - Rail"
                 }
             ],
-            "projectTitle": "CHANNELS"
+            "projectTitle": "CHANNELS",
+            "projectDescription": "This is the block of text that describes the project above. For now, this is a placeholder paragraph to make sure that the templating works appropriately, as well as to allow me to style the text block using the generated html page and css. In the future, this text will be replaced with an actual description of the project, which will change in the template data document to match the single project for each respective page."
         },
         {
             "carousel": [
@@ -44,7 +45,8 @@
                     "imgTitle": "Helios - Guidebook Spine Closeup"
                 }
             ],
-            "projectTitle": "Helios Guidebook"
+            "projectTitle": "Helios Guidebook",
+            "projectDescription": "This is the second block of text that describes the project above. For now, this is a placeholder paragraph to make sure that the templating works appropriately, as well as to allow me to style the text block using the generated html page and css. In the future, this text will be replaced with an actual description of the project, which will change in the template data document to match the single project for each respective page."
         },
         {
             "carousel": [
@@ -73,7 +75,8 @@
                     "imgTitle": "Modern Artifacts - Colophon"
                 }
             ],
-            "projectTitle": "Modern Artifacts"
+            "projectTitle": "Modern Artifacts",
+            "projectDescription": "This is the third block of text that describes the project above. For now, this is a placeholder paragraph to make sure that the templating works appropriately, as well as to allow me to style the text block using the generated html page and css. In the future, this text will be replaced with an actual description of the project, which will change in the template data document to match the single project for each respective page."
         },
         {
             "carousel": [
@@ -90,7 +93,8 @@
                     "imgTitle": "The Boomerang - Spread"
                 }
             ],
-            "projectTitle": "The Boomerang"
+            "projectTitle": "The Boomerang",
+            "projectDescription": "This is the fourth block of text that describes the project above. For now, this is a placeholder paragraph to make sure that the templating works appropriately, as well as to allow me to style the text block using the generated html page and css. In the future, this text will be replaced with an actual description of the project, which will change in the template data document to match the single project for each respective page."
         },
         {
             "carousel": [
@@ -103,7 +107,8 @@
                     "imgTitle": "UrT - Studio Image"
                 }
             ],
-            "projectTitle": "UrT"
+            "projectTitle": "UrT",
+            "projectDescription": "This is the fifth block of text that describes the project above. For now, this is a placeholder paragraph to make sure that the templating works appropriately, as well as to allow me to style the text block using the generated html page and css. In the future, this text will be replaced with an actual description of the project, which will change in the template data document to match the single project for each respective page."
         }
     ],
     "pageType": "print",
