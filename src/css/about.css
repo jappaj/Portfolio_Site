@@ -5,6 +5,12 @@
     .about-image {
         width: 100%; 
     }
+    .about-body-text {
+       font-family: "Cousine", sans-serif;
+        line-height: 9px;
+        letter-spacing: 0.5px; 
+        font-size: calc(9px + 0.8vw);
+    }
 }
 
 @media (min-width: 480px) {
@@ -13,6 +19,12 @@
     }
     .about-image {
         width: 480px;
+    }
+    .about-body-text {
+        font-family: "Cousine", sans-serif;
+        line-height: 13px;
+        letter-spacing: 1px;
+        font-size: calc(12px + 0.8vw);
     }
 }
 
@@ -30,10 +42,4 @@
     margin-left: 20px;
     margin-right: 10px;
     margin-top: 14px;
-}
-
-.about-text {
-    font-family: "Cousine", sans-serif;
-    line-height: 13px;
-    letter-spacing: 1px;
 }

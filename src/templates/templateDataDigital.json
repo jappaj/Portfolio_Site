@@ -18,6 +18,8 @@
             "projectTitle": "CHANNELS"
         },
         {
+            "multiContainer": "multi-container",
+            
             "carousel": [
                 {
                     "imgSrc": "img/Digital/WildTame/Car/Car960.jpg",

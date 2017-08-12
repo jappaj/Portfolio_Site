@@ -11,12 +11,12 @@
     background-color: #efeae7 !important;
 }
 
-@media (max-width: 944px) {
-    .project-container, .about-container {
+@media (max-width: 700px) {
+    .project-container {
         padding-top: calc(22px + 0.8vw);
         width: 100%; 
     }
-    .project-image, .about-image {
+    .project-image {
         width: 100%; 
     }
     .nw-registration {
@@ -26,22 +26,60 @@
         display: none;
     }
     .slick-prev {
-        display: none;
+        display: none !important;
     }
     .slick-next {
-        display: none;
+        display: none !important;
     }
     .project-title {
         display: inline-block;
         margin-right: 15px;
     }
+    .inside-menu {
+        margin-top: 3vh !important;
+    }
+    .inside-menu span {
+        letter-spacing: 0px;
+        word-spacing: calc(-4px + 0.5vw);
+        font-size: calc(6px + 1vw);
+    }
+}
+
+@media (min-width: 700px) and (max-width: 944px) {
+    .project-container {
+        padding-top: calc(22px + 0.8vw);
+        width: 100%; 
+    }
+    .project-image {
+        width: 100%; 
+    }
+    .nw-registration {
+        display: none;
+    }
+    .se-registration {
+        display: none;
+    }
+    .slick-prev {
+        display: none !important;
+    }
+    .slick-next {
+        display: none !important;
+    }
+    .project-title {
+        display: inline-block;
+        margin-right: 15px;
+    }
+    .inside-menu span {
+        letter-spacing: 5px;
+        font-size: calc(12px + 0.8vw);
+    }
 }
 
 @media (min-width: 944px) and (max-width: 1000px) {
-    .project-container, .about-container {
+    .project-container {
         width: 944px;
     }
-    .project-image, .about-image {
+    .project-image {
         width: 100%;
     }
     .nw-registration {
@@ -56,15 +94,29 @@
     .slick-next {
         display: none;
     }
+    .inside-menu span {
+        letter-spacing: 5px;
+        font-size: calc(12px + 0.8vw);
+    }
 }
 
 @media (min-width: 1000px) {
-    .project-container, .about-container {
+    .project-container {
         width: 944px;
     }
-    .project-image, .about-image {
+    .project-image {
         width: 100%;
     }
+    .inside-menu span {
+        letter-spacing: 5px;
+        font-size: calc(12px + 0.8vw);
+    }
+
+}
+
+.inside-menu {
+    font-family: 'Cousine', sans-serif;
+    margin-top: 3vh;
 }
 
 .image-container {
@@ -120,13 +172,6 @@
     float: left;
     margin-left: 1vw;
     color: black;
-}
-
-.inside-menu {
-    font-family: 'Cousine', sans-serif;
-    margin-top: 3vh;
-    letter-spacing: 5px;
-    font-size: calc(12px + 0.8vw);
 }
 
 .inside-menu-print {
