@@ -47,6 +47,8 @@ def run_mustache_loop(dict_in, base_command):
         # if this fails, end the program
         subprocess.check_call(call_args, shell=True)
 
+        print("Generated %s" % output_filename)
+
     os.remove(temp_filename)
 
 if __name__ == "__main__":
