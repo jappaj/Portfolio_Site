@@ -17,7 +17,7 @@ def main():
 def create_mustache_cmd(base_string, json_filename, output_filename):
     new_str = base_string % (json_filename, output_filename)
 
-    return new_str.split(" ")
+    return ["powershell.exe"] + [new_str]
 
 
 def run_mustache_loop(dict_in, base_command):
