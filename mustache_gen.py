@@ -41,10 +41,11 @@ def run_mustache_loop(dict_in, base_command):
         with open(temp_filename, 'w') as f:
             f.write(json_out)
 
-            call_args = create_mustache_cmd(base_command, temp_filename, output_filename)
-            
-            # if this fails, end the program
-            subprocess.check_call(call_args)
+        # flush file
+        call_args = create_mustache_cmd(base_command, temp_filename, output_filename)
+
+        # if this fails, end the program
+        subprocess.check_call(call_args)
 
 if __name__ == "__main__":
     main()
