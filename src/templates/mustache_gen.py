@@ -1,6 +1,6 @@
 from sys import argv
 from json import dumps, loads
-import subprocess
+import subprocess, os
 
 def main():
     if len(argv) < 3:
@@ -17,7 +17,8 @@ def main():
 def create_mustache_cmd(base_string, json_filename, output_filename):
     new_str = base_string % (json_filename, output_filename)
 
-    return ["powershell.exe"] + [new_str]
+    return new_str.split(" ")
+
 
 def run_mustache_loop(dict_in, base_command):
     static_data = {}
@@ -45,6 +46,8 @@ def run_mustache_loop(dict_in, base_command):
 
         # if this fails, end the program
         subprocess.check_call(call_args, shell=True)
+
+    os.remove(temp_filename)
 
 if __name__ == "__main__":
     main()
