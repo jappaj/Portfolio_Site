@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Jasper Dudley | About Me</title>
+        <title>Jasper Dudley | {{projectTitle}}</title>
         <link href="https://fonts.googleapis.com/css?family=Lora|Press+Start+2P|Cousine" rel="stylesheet">        
         <link rel="stylesheet" href="build/portfolio_site.min.css">
 <!--        build out-->
@@ -23,17 +23,19 @@
             {{> header}}
             <div class="column-center">
                 <div class="project-container">
-                    <div class="nw-registration">
-                        <img src="img/regCyan.png" class="registration-cyan">
-                        <img src="img/regMagenta.png" class="registration-magenta">
-                        <img src="img/regYellow.png" class="registration-yellow">
+                    <div class="nw-registration nw-registration-{{pageType}}">
+                        <img src="img/reg{{color1}}.png" class="registration-{{color1}}">
+                        <img src="img/reg{{color2}}.png" class="registration-{{color2}}">
+                        <img src="img/reg{{color3}}.png" class="registration-{{color3}}">
                     </div>
-                    <div class="image-container">
+                    <div class="image-container {{multiContainer}}">
                         {{#carousel}}
-                        <img class="project-image"
-                             src="{{imgSrc}}"
-                             alt="{{imgTitle}}"
-                             title="{{imgTitle}}">
+                        <div>
+                            <img class="project-image"
+                                 src="{{imgSrc}}"
+                                 alt="{{imgTitle}}"
+                                 title="{{imgTitle}}">
+                        </div>
                         {{/carousel}}
                         {{#iframeProject}}
                             <iframe class="{{iframeType}}" {{& iframeSource}}>
@@ -43,17 +45,21 @@
                     {{#vimeoBuffer}}
                         <div class="vimeo-buffer"></div>
                     {{/vimeoBuffer}}
-                    <div class="se-registration">
-                        <img src="img/regCyan.png" class="registration-cyan">
-                        <img src="img/regMagenta.png" class="registration-magenta">
-                        <img src="img/regYellow.png" class="registration-yellow">
+                    <div class="se-registration se-registration-{{pageType}}">
+                        <img src="img/reg{{color1}}.png" class="registration-{{color1}}">
+                        <img src="img/reg{{color2}}.png" class="registration-{{color2}}">
+                        <img src="img/reg{{color3}}.png" class="registration-{{color3}}">
                     </div>
                     <span class="project-title project-title-{{pageType}}">
                         {{projectTitle}}
                     </span>
-                    <span class="project-description project-description-{{pageType}}">
-                        {{projectDescription}}
-                    </span>
+                    <div class="description-buffer">
+                    </div>
+                    <div class="description-wrapper">
+                        <span class="project-description project-description-{{pageType}}">
+                            &emsp;&emsp;{{projectDescription}}
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>

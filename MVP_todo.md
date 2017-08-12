@@ -10,6 +10,7 @@
 * update all css/js links to use build files
 * add mustache to the build pipeline
 * header partial should have html head
+* template out page title
 
 ## REMEMBER:
 remove jQuery wrapper from template.js when finished with development

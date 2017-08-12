@@ -1,11 +1,6 @@
 //TODO: 
-// add mustache to the build pipeline
 // mustache -p footer.mustache -p header.mustache .\templateData.json .\template.mustache | Out-File -en utf8 ../../HFtest.html
-// make a low-res to high-res image loader based on mouseover
-// build image carousels
-// on pageload, only load low-res previews of first images
-// on mouseover, load hi-res image and next two images
-// add parrallax based movement to mobile version?
+// 
 // REMEMBER: remove jQuery wrapper when finished with development
 
 $(function() {

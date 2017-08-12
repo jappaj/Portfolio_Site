@@ -11,7 +11,7 @@
     background-color: #efeae7 !important;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 480px) {
     .project-container {
         padding-top: calc(22px + 0.8vw);
         width: 100%; 
@@ -43,6 +43,50 @@
         word-spacing: calc(-4px + 0.5vw);
         font-size: calc(6px + 1vw);
     }
+    .project-description {
+        line-height: 9px;
+        letter-spacing: 0.5px; 
+        font-size: calc(9px + 0.8vw);
+    }
+}
+    
+@media (min-width: 480px) and (max-width: 700px) {
+    .project-container {
+        padding-top: calc(22px + 0.8vw);
+        width: 100%; 
+    }
+    .project-image {
+        width: 100%; 
+    }
+    .nw-registration {
+        display: none;
+    }
+    .se-registration {
+        display: none;
+    }
+    .slick-prev {
+        display: none !important;
+    }
+    .slick-next {
+        display: none !important;
+    }
+    .project-title {
+        display: inline-block;
+        margin-right: 15px;
+    }
+    .inside-menu {
+        margin-top: 3vh !important;
+    }
+    .inside-menu span {
+        letter-spacing: 0px;
+        word-spacing: calc(-4px + 0.5vw);
+        font-size: calc(6px + 1vw);
+    }
+    .project-descsription {
+        line-height: 13px;
+        letter-spacing: 1px;
+        font-size: calc(12px + 0.8vw);
+    }
 }
 
 @media (min-width: 700px) and (max-width: 944px) {
@@ -73,6 +117,11 @@
         letter-spacing: 5px;
         font-size: calc(12px + 0.8vw);
     }
+    .project-descsription {
+        line-height: 13px;
+        letter-spacing: 1px;
+        font-size: calc(12px + 0.8vw);
+    }
 }
 
 @media (min-width: 944px) and (max-width: 1000px) {
@@ -98,6 +147,11 @@
         letter-spacing: 5px;
         font-size: calc(12px + 0.8vw);
     }
+    .project-descsription {
+        line-height: 13px;
+        letter-spacing: 1px;
+        font-size: calc(12px + 0.8vw);
+    }
 }
 
 @media (min-width: 1000px) {
@@ -111,7 +165,28 @@
         letter-spacing: 5px;
         font-size: calc(12px + 0.8vw);
     }
+    .project-descsription {
+        line-height: 13px;
+        letter-spacing: 1px;
+        font-size: calc(12px + 0.8vw);
+    }
 
+}
+
+.description-buffer {
+    width: 100%;
+    display: block;
+    height: 5vh;
+}
+
+.description-wrapper {
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 14px;
+}
+
+.project-description {
+    font-family: "Cousine", sans-serif;
 }
 
 .inside-menu {
@@ -231,6 +306,14 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: calc(25px + 2.5vw);
+}
+
+.project-description-print {
+    color: #242126;
+}
+
+.project-description-digital {
+    color: #efeae7;
 }
 
 .iframe-soundcloud {
