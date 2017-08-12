@@ -14,8 +14,8 @@ def main():
 
         run_mustache_loop(json_body, base_mustache_string)
 
-def create_mustache_cmd(base_string, json_filename):
-    new_str = base_string % json_filename
+def create_mustache_cmd(base_string, json_filename, output_filename):
+    new_str = base_string % (json_filename, output_filename)
 
     return new_str.split(" ")
 
@@ -37,10 +37,11 @@ def run_mustache_loop(dict_in, base_command):
         json_out = dumps(new_project_dict)
 
         temp_filename = "mustache_temp.json"
+        output_filename = project["projectTitle"].replace(" ", "_") + ".html"
         with open(temp_filename, 'w') as f:
             f.write(json_out)
 
-            call_args = create_mustache_cmd(base_command, temp_filename)
+            call_args = create_mustache_cmd(base_command, temp_filename, output_filename)
             
             # if this fails, end the program
             subprocess.check_call(call_args)
