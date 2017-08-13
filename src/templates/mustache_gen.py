@@ -1,6 +1,7 @@
 from sys import argv
 from json import dumps, loads
 import subprocess, os
+import pprint
 
 def main():
     if len(argv) < 3:
@@ -37,8 +38,10 @@ def run_mustache_loop(dict_in, base_command):
         json_out = dumps(new_project_dict)
 
         temp_filename = "mustache_temp.json"
-        output_filename = project["projectTitle"].replace(" ", "_") + ".html"
+        output_filename = project["projectTitle"].replace(" ", "_").replace("\"", "").replace("&", "and") + ".html"
         with open(temp_filename, 'w') as f:
+            pprint.pprint(new_project_dict)
+            print "\n"
             f.write(json_out)
 
         # flush file

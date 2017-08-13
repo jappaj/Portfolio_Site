@@ -18,7 +18,8 @@
                     "imgTitle": "CHANNELS - Rail"
                 }
             ],
-            "projectTitle": "CHANNELS"
+            "projectTitle": "CHANNELS",
+            "projectDescription": "ASDFASDFasdfasdf."
         },
         {
             "multiContainer": "multi-container",
@@ -60,7 +61,8 @@
                     "imgTitle": "Wild & Tame - Shed"
                 }
             ],
-            "projectTitle": "Wild & Tame"
+            "projectTitle": "Wild \"&\" Tame",
+            "projectDescription": "Wild \"&\" Tame is a photographic essay inspired by the philosophies of Lynn Cazabon and the essays of early 1900’s nature writers. The piece consists of six vertical, split-frame landscapes, captured with the intent of displaying, in varying senses, the duality of man and nature. Each image contains elements of natural, wild space and human, built space, seeking to portray the cyclical consumption and reclamation imparted by each force respectively. The images are arranged here in their intended gallery display order, as well as in a composite digital image."
         },
         {
             "carousel": [
@@ -85,7 +87,8 @@
                     "imgTitle": "Neon - Paradise"
                 }
             ],
-            "projectTitle": "Neon"
+            "projectTitle": "Neon",
+            "projectDescription": "This is a placeholder description."
         },
         {
             "iframeProject": [
@@ -100,7 +103,8 @@
                     "iframeSource": "width='100%' height='450' scrolling='no' frameborder='no' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/334810383&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true'"
                 }
             ],
-            "projectTitle": "Sound Design"
+            "projectTitle": "Sound Design",
+            "projectDescription": "The two sound design pieces presented here, Phonography - 宇宙の水 and Soundscape - 暗い大気, are personal explorations into the world of recording and editing for soundscape production. Phonography - 宇宙の水 uses exclusively un-doctored sounds recorded directly from nature, mixed and mastered to create an immersive waterscape while remaining true to source. Soundscape - 暗い大気, however, utilizes a wide variety of sonic sources, from bats in an abandoned barn, to coil springs and bearings recorded with three-dimensional audio, to the wind whistling through steel tanks at a concrete plant, many of which were heavily modified so as to be unrecognizable. Due to the nature of the material and the methods of production, I highly recommend the use of headphones when listening to these pieces, so as to experience them fully."
         },
         {
             "iframeProject": [
@@ -111,6 +115,7 @@
                 }
             ],
             "projectTitle": "Anthology of Swiss Music",
+            "projectDescription": "The Anthology of Swiss Music is a motion graphic based on a poster by the same name from Josef Muller Brockmann, set to the music of a traditional Swiss string quartet. The original poster is based on the form of a vinyl LP, and so in creating my animated tribute, I sought to reference the movement of a turntable as an alternative way to explore the forms of the illustration. The animation relied heavily on the three-dimensional camera controls of Adobe AfterEffects, and served as a healthy learning experience for the complexities of organic camera movement in a digital environment.",
             
             "vimeoBuffer": "true"
         }
