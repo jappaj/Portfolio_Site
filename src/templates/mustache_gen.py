@@ -1,7 +1,8 @@
+#python .\mustache_gen.py templateDataDigital.json "mustache -p footer.mustache -p header.mustache %s project-single.mustache ../html-outputs/%s"
 from sys import argv
 from json import dumps, loads
 import subprocess, os
-import pprint
+import copy
 
 def main():
     if len(argv) < 3:
@@ -29,7 +30,7 @@ def run_mustache_loop(dict_in, base_command):
             static_data[k] = v
 
     for project in dict_in["projects"]:
-        new_project_dict = static_data
+        new_project_dict = copy.deepcopy(static_data)
 
         # copy carousel and title
         for k, v in project.iteritems():
@@ -40,8 +41,6 @@ def run_mustache_loop(dict_in, base_command):
         temp_filename = "mustache_temp.json"
         output_filename = project["projectTitle"].replace(" ", "_").replace("\"", "").replace("&", "and") + ".html"
         with open(temp_filename, 'w') as f:
-            pprint.pprint(new_project_dict)
-            print "\n"
             f.write(json_out)
 
         # flush file

@@ -1,6 +1,5 @@
 //TODO: 
 // mustache -p footer.mustache -p header.mustache .\templateData.json .\template.mustache | Out-File -en utf8 ../../HFtest.html
-// python .\mustache_gen.py templateDataDigital.json "mustache -p footer.mustache -p header.mustache %s project-single.mustache | Out-File -en utf8 ../html-outputs/%s"
 // REMEMBER: remove jQuery wrapper when finished with development
 
 $(function() {
