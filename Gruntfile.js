@@ -26,6 +26,23 @@ module.exports = function(grunt) {
               dest: 'build/<%= pkg.name %>.min.css'
           }
       },
+      exec: {
+        listDigital: {
+            cmd: "mustache -p src/templates/footer.mustache -p src/templates/header.mustache src/templates/templateDataDigital.json src/templates/template.mustache digital/digital.html"
+        },
+        listPrint: {
+            cmd: "mustache -p src/templates/footer.mustache -p src/templates/header.mustache src/templates/templateData.json src/templates/template.mustache print/print.html"
+        },
+        batchDigital: {
+            cmd: "python src/templates/mustache_gen.py src/templates/templateDataDigital.json \"mustache -p src/templates/footer.mustache -p src/templates/header.mustache %s src/templates/project-single.mustache digital/%s\""
+        },
+        batchPrint: {
+            cmd: "python src/templates/mustache_gen.py src/templates/templateData.json \"mustache -p src/templates/footer.mustache -p src/templates/header.mustache %s src/templates/project-single.mustache print/%s\""
+        },
+        about: {
+            cmd: "mustache -p src/templates/footer.mustache -p src/templates/header.mustache src/templates/templateData.json src/templates/about.mustache about.html"
+        }
+      },
       concat: {
           css: {
               src: 'src/css/*.css',
@@ -63,7 +80,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-exec');
 
   // Default task(s).
-  grunt.registerTask('default', ['concat', 'uglify', 'postcss', 'clean']);
+  grunt.registerTask('default', ['exec', 'concat', 'uglify', 'postcss', 'clean']);
 };

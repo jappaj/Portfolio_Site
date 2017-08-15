@@ -1,5 +1,5 @@
-# DIGITAL python .\mustache_gen.py templateDataDigital.json "mustache -p footer.mustache -p header.mustache %s project-single.mustache ../html-output/%s"
-# PRINT python .\mustache_gen.py templateData.json "mustache -p footer.mustache -p header.mustache %s project-single.mustache ../html-output/%s"
+# DIGITAL python src/templates/mustache_gen.py src/templates/templateDataDigital.json "mustache -p src/templates/footer.mustache -p src/templates/header.mustache %s src/templates/project-single.mustache digital/%s"
+# PRINT python src/templates/mustache_gen.py src/templates/templateData.json "mustache -p src/templates/footer.mustache -p src/templates/header.mustache %s src/templates/project-single.mustache print/%s"
 from sys import argv
 from json import dumps, loads
 import subprocess, os

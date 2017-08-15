@@ -24,7 +24,7 @@
         font-family: "Cousine", sans-serif;
         line-height: 13px;
         letter-spacing: 1px;
-        font-size: calc(12px + 0.8vw);
+        font-size: calc(12px + 0.1vw);
     }
 }
 
