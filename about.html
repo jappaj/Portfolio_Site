@@ -12,7 +12,37 @@
     </head>
     <body class="body-print">
         <div class="main-content">
-            {{> header}}
+
+<div class="header-left">
+    <div class="header-bar header-bar-print">
+        <span class="inside-text inside-text-print">
+            jasper
+        </span>
+        <nav class="inside-menu inside-menu-print">
+            <a href="http://jasperdudley.com/">
+                <span class="home-text home-text-print">
+                    home
+                </span>
+            </a>
+            <span class="pipe-text pipe-text-print">
+                |
+            </span>
+            <a href="http://jasperdudley.com/about.html">
+                <span class="about-text about-text-print">
+                    about
+                </span>
+            </a>
+        </nav>
+    </div>
+    <div class="outside-text">
+        <span class="header-fade-text header-fade-text-print">
+            dudley
+        </span>
+    </div>
+</div>
+
+
+
             <div class="column-center">
                 <div class="about-container">
                     <img class="about-image" src="img/self-portrait.jpg">
@@ -25,6 +55,21 @@
                 </div>
             </div>
         </div>
-        {{> footer}}
-    </body>
+<footer class="footer-container footer-container-print">
+    <div class="footer-internal footer-internal-print">
+        <span class="contact-info">
+            Contact me: <br>
+            <a href="mailto:jd13@umbc.edu">
+                jd13@umbc.edu
+            </a> <br>
+            <a href="tel: 410-200-8979">
+                410-200-8979
+            </a>
+        </span>
+        <br><br>
+        <span class="copyright-info">
+            &copy; Jasper Dudley<br>Reed Trevelyan<br>2017
+        </span>
+    </div>
+</footer>    </body>
 </html>

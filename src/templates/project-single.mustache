@@ -2,23 +2,21 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Jasper Dudley | {{projectTitle}}</title>
-        <link href="https://fonts.googleapis.com/css?family=Lora|Press+Start+2P|Cousine" rel="stylesheet">        
-        <link rel="stylesheet" href="build/portfolio_site.min.css">
-<!--        build out-->
-        <link rel="stylesheet" href="slick-1.6.0/slick/slick.css">
-        <link rel="stylesheet" href="slick-1.6.0/slick/slick-theme.css">
-        <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="src/js/registration-effect.js"></script>
-        <script src="src/js/template.js"></script>
-        <script src="src/js/individual.js"></script>
-<!--        build out-->
-        <script type="text/javascript" src="slick-1.6.0/slick/slick.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+        
+        <title>Jasper Dudley | {{projectTitle}}</title>
+        
+        <link rel="stylesheet" href="../../build/css/portfolio_site.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora|Press+Start+2P|Cousine">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+        <script src="../../build/js/single.min.js"></script>
 
     </head>
     <body class="body-{{pageType}}">
@@ -27,16 +25,16 @@
             <div class="column-center">
                 <div class="project-container">
                     <div class="nw-registration nw-registration-{{pageType}}">
-                        <img src="img/reg{{color1}}.png" class="registration-{{color1}}">
-                        <img src="img/reg{{color2}}.png" class="registration-{{color2}}">
-                        <img src="img/reg{{color3}}.png" class="registration-{{color3}}">
+                        <img src="../../img/reg{{color1}}.png" class="registration-{{color1}}">
+                        <img src="../../img/reg{{color2}}.png" class="registration-{{color2}}">
+                        <img src="../../img/reg{{color3}}.png" class="registration-{{color3}}">
                     </div>
                     <div class="image-container {{multiContainer}}">
                         {{#carousel}}
                         <div class="magnific-wrapper">
                             <img class="project-image"
-                                 src="{{imgSrc}}"
-                                 href="{{HRimgSrc}}"
+                                 src="../../{{imgSrc}}"
+                                 href="../../{{HRimgSrc}}"
                                  alt="{{imgTitle}}"
                                  title="{{imgTitle}}">
                         </div>
@@ -50,9 +48,9 @@
                         <div class="vimeo-buffer"></div>
                     {{/vimeoBuffer}}
                     <div class="se-registration se-registration-{{pageType}}">
-                        <img src="img/reg{{color1}}.png" class="registration-{{color1}}">
-                        <img src="img/reg{{color2}}.png" class="registration-{{color2}}">
-                        <img src="img/reg{{color3}}.png" class="registration-{{color3}}">
+                        <img src="../../img/reg{{color1}}.png" class="registration-{{color1}}">
+                        <img src="../../img/reg{{color2}}.png" class="registration-{{color2}}">
+                        <img src="../../img/reg{{color3}}.png" class="registration-{{color3}}">
                     </div>
                     <span class="project-title project-title-{{pageType}}">
                         {{projectTitle}}

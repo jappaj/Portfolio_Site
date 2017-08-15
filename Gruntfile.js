@@ -5,12 +5,21 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     uglify: {
       options: {
-        banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
+        banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n$(function() {',
+        footer: '});'
       },
       
-      build: {
-        src: 'build/build.js',
-        dest: 'build/<%= pkg.name %>.min.js'
+      index: {
+        src: 'build/temp/js/index.js',
+        dest: 'build/js/index.min.js'
+      },
+      single: {
+        src: 'build/temp/js/single.js',
+        dest: 'build/js/single.min.js'
+      },
+      list: {
+        src: 'build/temp/js/list.js',
+        dest: 'build/js/list.min.js'
       }
     },
     postcss: {
@@ -22,8 +31,8 @@ module.exports = function(grunt) {
               ]
           },
           dist: {
-              src: 'build/build.css',
-              dest: 'build/<%= pkg.name %>.min.css'
+              src: 'build/css/build.css',
+              dest: 'build/css/<%= pkg.name %>.min.css'
           }
       },
       exec: {
@@ -34,10 +43,10 @@ module.exports = function(grunt) {
             cmd: "mustache -p src/templates/footer.mustache -p src/templates/header.mustache src/templates/templateData.json src/templates/template.mustache print/print.html"
         },
         batchDigital: {
-            cmd: "python src/templates/mustache_gen.py src/templates/templateDataDigital.json \"mustache -p src/templates/footer.mustache -p src/templates/header.mustache %s src/templates/project-single.mustache digital/%s\""
+            cmd: "python src/templates/mustache_gen.py src/templates/templateDataDigital.json \"mustache -p src/templates/footer.mustache -p src/templates/header.mustache %s src/templates/project-single.mustache digital/project/%s\""
         },
         batchPrint: {
-            cmd: "python src/templates/mustache_gen.py src/templates/templateData.json \"mustache -p src/templates/footer.mustache -p src/templates/header.mustache %s src/templates/project-single.mustache print/%s\""
+            cmd: "python src/templates/mustache_gen.py src/templates/templateData.json \"mustache -p src/templates/footer.mustache -p src/templates/header.mustache %s src/templates/project-single.mustache print/project/%s\""
         },
         about: {
             cmd: "mustache -p src/templates/footer.mustache -p src/templates/header.mustache src/templates/templateData.json src/templates/about.mustache about.html"
@@ -46,20 +55,19 @@ module.exports = function(grunt) {
       concat: {
           css: {
               src: 'src/css/*.css',
-              dest: 'build/build.css'
+              dest: 'build/css/build.css'
           },
           js: {
-              src: 'src/js/*.js',
-              dest: 'build/build.js',
-              options: {
-                  banner: '$(function() {',
-                  footer: '});'
+              files: {
+                  'build/temp/js/index.js': ['src/js/index.js', 'src/js/registration-effect.js'],
+                  'build/temp/js/single.js': ['src/js/individual.js', 'src/js/registration-effect.js', 'src/js/template.js'],
+                  'build/temp/js/list.js': ['src/js/template.js', 'src/js/registration-effect.js'],
               }
           },
       },
       clean: {
-          css: ['build/build.css'],
-          js: ['build/build.js']  
+          css: ['build/css/build.css'],
+          js: ['build/temp/js/*.js']  
       },
       watch: {
           css: {
@@ -69,6 +77,10 @@ module.exports = function(grunt) {
           js: {
               files: ['src/js/*.js'],
               tasks: ['concat:js', 'uglify', 'clean:js']
+          },
+          mustache: {
+              files: ['src/templates/*.mustache'],
+              tasks: ['exec']
           }
       }
       

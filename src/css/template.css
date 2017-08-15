@@ -229,11 +229,11 @@
     text-align: right;
 }
 
-.home-text, .about-text, .pipe-text {
+.home-text, .about-text, .pipe-text, .home-text a, .about-text a {
     opacity: 0.20;
 }
 
-.home-text:hover, .about-text:hover {
+.home-text:hover, .about-text:hover, .home-text a:hover, .about-text a:hover {
     opacity: 0.85;
 }
 
@@ -252,12 +252,18 @@
 .inside-menu-print {
     float: left;
     margin-left: 1vw;
+}
+
+.inside-menu-print, .inside-menu-print a {
     color: white;
 }
 
 .inside-menu-digital {
     float: right;
     margin-right: 1vw;
+}
+
+.inside-menu-digital, .inside-menu-digital a {
     color: black;
 }
 
@@ -387,6 +393,13 @@
 
 .registration-blue {
     fill: #0000ff;
+}
+
+.slick-prev {
+    left: -40px !important;
+}
+.slick-next {
+    right: -30px !important;
 }
 
 .slick-prev:before,
