@@ -17,8 +17,8 @@
   },
   "description": "jasper dudley portfolio site",
   "repository": {
-      "type": "git",
-      "url": "https://github.com/jappaj/Portfolio_Site.git"
+    "type": "git",
+    "url": "https://github.com/jappaj/Portfolio_Site.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

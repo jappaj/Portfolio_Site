@@ -20,7 +20,10 @@ def main():
 def create_mustache_cmd(base_string, json_filename, output_filename):
     new_str = base_string % (json_filename, output_filename)
 
-    return ["powershell.exe"] + [new_str]
+    if os.name == "nt":
+        return ["powerhsell.exe"] + [new_str]
+    else:
+        return new_str.split(" ")
 
 
 def run_mustache_loop(dict_in, base_command):
@@ -48,7 +51,12 @@ def run_mustache_loop(dict_in, base_command):
         call_args = create_mustache_cmd(base_command, temp_filename, output_filename)
 
         # if this fails, end the program
-        subprocess.check_call(call_args, shell=True)
+        print " ".join(call_args)
+
+        if os.name == "nt":
+            subprocess.check_call(call_args, shell=True)
+        else:
+            subprocess.check_call(call_args)
 
         print("Generated %s" % output_filename)
 
