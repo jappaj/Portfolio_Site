@@ -43,9 +43,6 @@ a, u {
     font-family: 'Press Start 2P', cursive;
     font-size: 3.5vw;
     z-index: 2;
-    -moz-transition: background 0.5s ease; /* Firefox */
-    -webkit-transition: background 0.5s ease; /* Safari and Chrome */
-    -o-transition: background 0.5s ease; /* Opera */
     transition: background 0.5s ease;
 }
 
@@ -58,18 +55,12 @@ a, u {
     left: 0;
     width: 50%;
     height: 100vh;
-    background: -webkit-radial-gradient(circle, #312e34, #242126);
-    background: -o-radial-gradient(circle, #312e34, #242126);
-    background: -moz-radial-gradient(circle, #312e34, #242126);
     background: radial-gradient(circle, #312e34, #242126);
     z-index: 1;
 }
 
 .left-content:hover {
     background: rgba(36, 33, 38, 0.3);
-    -moz-transition: background 0.5s ease; /* Firefox */
-    -webkit-transition: background 0.5s ease; /* Safari and Chrome */
-    -o-transition: background 0.5s ease; /* Opera */
     transition: background 0.5s ease;
 }
 
@@ -83,9 +74,6 @@ a, u {
     font-size: 6vw;
     letter-spacing: 0.1vw;
     z-index: 2;
-    -moz-transition: background 0.5s ease; /* Firefox */
-    -webkit-transition: background 0.5s ease; /* Safari and Chrome */
-    -o-transition: background 0.5s ease; /* Opera */
     transition: background 0.5s ease;
 }
 
@@ -97,18 +85,12 @@ a, u {
     position: absolute;
     right: 0;
     width: 50%;
-    background: -webkit-radial-gradient(circle, #e0d6cf, #efeae7);
-    background: -o-radial-gradient(circle, #e0d6cf, #efeae7);
-    background: -moz-radial-gradient(circle, #e0d6cf, #efeae7);
     background: radial-gradient(circle, #e0d6cf, #efeae7);
     z-index: 1;
 }
 
 .right-content:hover {
     background: rgba(239, 234, 231, 1);
-    -moz-transition: background 0.5s ease; /* Firefox */
-    -webkit-transition: background 0.5s ease; /* Safari and Chrome */
-    -o-transition: background 0.5s ease; /* Opera */
     transition: background 0.5s ease;
 }
 
@@ -117,8 +99,7 @@ a, u {
     margin-right: auto;
     position: relative;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 .centered-text {
