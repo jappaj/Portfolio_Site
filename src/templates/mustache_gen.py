@@ -51,8 +51,6 @@ def run_mustache_loop(dict_in, base_command):
         call_args = create_mustache_cmd(base_command, temp_filename, output_filename)
 
         # if this fails, end the program
-        print " ".join(call_args)
-
         if os.name == "nt":
             subprocess.check_call(call_args, shell=True)
         else:
