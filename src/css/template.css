@@ -231,10 +231,12 @@
 
 .home-text, .about-text, .pipe-text, .home-text a, .about-text a {
     opacity: 0.20;
+    transition: opacity 50ms ease;
 }
 
 .home-text:hover, .about-text:hover, .home-text a:hover, .about-text a:hover {
     opacity: 0.85;
+    transition: opacity 50ms ease;
 }
 
 .inside-text-print {
@@ -293,6 +295,14 @@
     text-align: right;
     font-family: 'Cousine', sans-serif;
     font-size: calc(12px + 0.8vw);
+    text-decoration: underline !important;
+    opacity: 1;
+    transition: opacity 50ms ease;
+}
+
+.project-title:hover {
+    opacity: 0.7;
+    transition: opacity 50ms ease;
 }
 
 .project-title-digital {
