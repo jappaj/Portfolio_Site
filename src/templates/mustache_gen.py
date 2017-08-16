@@ -46,7 +46,7 @@ def run_mustache_loop(dict_in, base_command):
         temp_filename = "mustache_temp.json"
         output_filename = project["projectTitle"].replace(" ", "_").replace("\"", "").replace("&", "and") + ".html"
         with open(temp_filename, 'w') as f:
-            f.write(json_out)
+            f.write(u'' + json_out)
 
         # flush file
         call_args = create_mustache_cmd(base_command, temp_filename, output_filename)
