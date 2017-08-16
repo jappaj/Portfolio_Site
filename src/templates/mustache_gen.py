@@ -12,7 +12,7 @@ def main():
         filename = argv[1]
         base_mustache_string = argv[2]
 
-    with open(filename, 'r') as f:
+    with open(filename, 'r', encoding='utf-8') as f:
         json_body = loads(f.read().strip())
 
         run_mustache_loop(json_body, base_mustache_string)
@@ -21,7 +21,7 @@ def create_mustache_cmd(base_string, json_filename, output_filename):
     new_str = base_string % (json_filename, output_filename)
 
     if os.name == "nt":
-        return ["powerhsell.exe"] + [new_str]
+        return ["powershell.exe"] + [new_str]
     else:
         return new_str.split(" ")
 
@@ -29,7 +29,7 @@ def create_mustache_cmd(base_string, json_filename, output_filename):
 def run_mustache_loop(dict_in, base_command):
     static_data = {}
 
-    for k, v in dict_in.iteritems():
+    for k, v in dict_in.items():
         if k != "projects":
             static_data[k] = v
 
@@ -37,9 +37,9 @@ def run_mustache_loop(dict_in, base_command):
         new_project_dict = copy.deepcopy(static_data)
 
         # copy carousel and title
-        for k, v in project.iteritems():
+        for k, v in project.items():
             new_project_dict[k] = v
-        
+
         json_out = dumps(new_project_dict)
 
         temp_filename = "mustache_temp.json"
