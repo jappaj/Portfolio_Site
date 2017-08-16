@@ -2,6 +2,7 @@
 # PRINT python src/templates/mustache_gen.py src/templates/templateData.json "mustache -p src/templates/footer.mustache -p src/templates/header.mustache %s src/templates/project-single.mustache print/%s"
 from sys import argv
 from json import dumps, loads
+from io import open
 import subprocess, os
 import copy
 
