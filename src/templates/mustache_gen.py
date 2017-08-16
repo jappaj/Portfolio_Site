@@ -21,7 +21,7 @@ def create_mustache_cmd(base_string, json_filename, output_filename):
     new_str = base_string % (json_filename, output_filename)
 
     if os.name == "nt":
-        return ["powerhsell.exe"] + [new_str]
+        return ["powershell.exe"] + [new_str]
     else:
         return new_str.split(" ")
 
