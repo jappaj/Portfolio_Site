@@ -37,19 +37,19 @@ module.exports = function(grunt) {
       },
       exec: {
         listDigital: {
-            cmd: "mustache -p src/templates/footer.mustache -p src/templates/header.mustache src/templates/templateDataDigital.json src/templates/template.mustache digital/digital.html"
+            cmd: "mustache -p src/templates/footer.mustache -p src/templates/header.mustache src/templates/data/templateDataDigital.json src/templates/template.mustache digital/digital.html"
         },
         listPrint: {
-            cmd: "mustache -p src/templates/footer.mustache -p src/templates/header.mustache src/templates/templateData.json src/templates/template.mustache print/print.html"
+            cmd: "mustache -p src/templates/footer.mustache -p src/templates/header.mustache src/templates/data/templateDataPrint.json src/templates/template.mustache print/print.html"
         },
         batchDigital: {
-            cmd: "python src/templates/mustache_gen.py src/templates/templateDataDigital.json \"mustache -p src/templates/footer.mustache -p src/templates/header.mustache %s src/templates/project-single.mustache digital/project/%s\""
+            cmd: "python src/templates/scripts/mustache_gen.py src/templates/data/templateDataDigital.json \"mustache -p src/templates/footer.mustache -p src/templates/header.mustache %s src/templates/project-single.mustache digital/project/%s\""
         },
         batchPrint: {
-            cmd: "python src/templates/mustache_gen.py src/templates/templateData.json \"mustache -p src/templates/footer.mustache -p src/templates/header.mustache %s src/templates/project-single.mustache print/project/%s\""
+            cmd: "python src/templates/scripts/mustache_gen.py src/templates/data/templateDataPrint.json \"mustache -p src/templates/footer.mustache -p src/templates/header.mustache %s src/templates/project-single.mustache print/project/%s\""
         },
         about: {
-            cmd: "mustache -p src/templates/footer.mustache -p src/templates/header.mustache src/templates/templateData.json src/templates/about.mustache about.html"
+            cmd: "mustache -p src/templates/footer.mustache -p src/templates/header.mustache src/templates/data/templateDataPrint.json src/templates/about.mustache about.html"
         }
       },
       concat: {
