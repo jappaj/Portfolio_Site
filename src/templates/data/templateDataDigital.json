@@ -4,16 +4,19 @@
             "carousel": [
                 {
                     "imgSrc": "img/Digital/CHANNELS/sea/ship_night_downscale960.jpg",
+                    "LRimgSrc": "img/Digital/CHANNELS/sea/ship_night_downscale960low.jpg",
                     "HRimgSrc": "img/Digital/CHANNELS/sea/ship_night_downscale1920.jpg",
                     "imgTitle": "CHANNELS - Sea"
                 },
                 {
                     "imgSrc": "img/Digital/CHANNELS/road/trucks_night_downscale960.jpg",
+                    "LRimgSrc": "img/Digital/CHANNELS/road/trucks_night_downscale960low.jpg",
                     "HRimgSrc": "img/Digital/CHANNELS/road/trucks_night_downscale1920.jpg",
                     "imgTitle": "CHANNELS - Road"
                 },
                 {
                     "imgSrc": "img/Digital/CHANNELS/rail/new_train_downscale960.jpg",
+                    "LRimgSrc": "img/Digital/CHANNELS/rail/new_train_downscale960low.jpg",
                     "HRimgSrc": "img/Digital/CHANNELS/rail/new_train_downscale1920.jpg",
                     "imgTitle": "CHANNELS - Rail"
                 }
@@ -28,36 +31,43 @@
             "carousel": [
                 {
                     "imgSrc": "img/Digital/WildTame/Comp/Wild+Tame_COMP480.jpg",
+                    "LRimgSrc": "img/Digital/WildTame/Comp/Wild+Tame_COMP480low.jpg",
                     "HRimgSrc": "img/Digital/WildTame/Comp/Wild+Tame_COMP960.jpg",
                     "imgTitle": "Wild & Tame - Composite"
                 },
                 {
                     "imgSrc": "img/Digital/WildTame/Car/Car960.jpg",
+                    "LRimgSrc": "img/Digital/WildTame/Car/Car960low.jpg",
                     "HRimgSrc": "img/Digital/WildTame/Car/Car1920.jpg",
                     "imgTitle": "Wild & Tame - Car"
                 },
                 {
                     "imgSrc": "img/Digital/WildTame/Dumpster/Dumpster960.jpg",
+                    "LRimgSrc": "img/Digital/WildTame/Dumpster/Dumpster960low.jpg",
                     "HRimgSrc": "img/Digital/WildTame/Dumpster/Dumpster1920.jpg",
                     "imgTitle": "Wild & Tame - Dumpster"
                 },
                 {
                     "imgSrc": "img/Digital/WildTame/Train/Train960.jpg",
+                    "LRimgSrc": "img/Digital/WildTame/Train/Train960low.jpg",
                     "HRimgSrc": "img/Digital/WildTame/Train/Train1920.jpg",
                     "imgTitle": "Wild & Tame - Train"
                 },
                 {
                     "imgSrc": "img/Digital/WildTame/Box/Box960.jpg",
+                    "LRimgSrc": "img/Digital/WildTame/Box/Box960.jpg",
                     "HRimgSrc": "img/Digital/WildTame/Box/Box1920.jpg",
                     "imgTitle": "Wild & Tame - Box"
                 },
                 {
                     "imgSrc": "img/Digital/WildTame/Crane/Crane960.jpg",
+                    "LRimgSrc": "img/Digital/WildTame/Crane/Crane960low.jpg",
                     "HRimgSrc": "img/Digital/WildTame/Crane/Crane1920.jpg",
                     "imgTitle": "Wild & Tame - Crane"
                 },
                 {
                     "imgSrc": "img/Digital/WildTame/Shed/Shed960.jpg",
+                    "LRimgSrc": "img/Digital/WildTame/Shed/Shed960low.jpg",
                     "HRimgSrc": "img/Digital/WildTame/Shed/Shed1920.jpg",
                     "imgTitle": "Wild & Tame - Shed"
                 }
@@ -70,21 +80,25 @@
             "carousel": [
                 {
                     "imgSrc": "img/Digital/Neon/Nails/Nails960.jpg",
+                    "LRimgSrc": "img/Digital/Neon/Nails/Nails960low.jpg",
                     "HRimgSrc": "img/Digital/Neon/Nails/Nails1920.jpg",
                     "imgTitle": "Neon - Nails"
                 },
                 {
                     "imgSrc": "img/Digital/Neon/Laundromat/Laundromat960.jpg",
+                    "LRimgSrc": "img/Digital/Neon/Laundromat/Laundromat960low.jpg",
                     "HRimgSrc": "img/Digital/Neon/Laundromat/Laundromat1920.jpg",
                     "imgTitle": "Neon - Laundromat"
                 },
                 {
                     "imgSrc": "img/Digital/Neon/Mikes/Mikes960.jpg",
+                    "LRimgSrc": "img/Digital/Neon/Mikes/Mikes960low.jpg",
                     "HRimgSrc": "img/Digital/Neon/Mikes/Mikes1920.jpg",
                     "imgTitle": "Neon - Mike's"
                 },
                 {
                     "imgSrc": "img/Digital/Neon/Paradise/Pizza960.jpg",
+                    "LRimgSrc": "img/Digital/Neon/Paradise/Pizza960low.jpg",
                     "HRimgSrc": "img/Digital/Neon/Paradise/Pizza1920.jpg",
                     "imgTitle": "Neon - Paradise"
                 }

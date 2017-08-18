@@ -19,6 +19,7 @@ $(window).on('scroll', function() {
 
 $('.image-container')/*.not('.multi-container')*/.slick({
     fade: true,
+    centerMode: true,
     adaptiveHeight: true,
     arrows: true,
     dots: true,

@@ -14,10 +14,15 @@
 @media (max-width: 480px) {
     .project-container {
         padding-top: calc(22px + 0.8vw);
-        width: 100%; 
+        max-width: 100%; 
     }
     .project-image {
         width: 100%; 
+    }
+    .multi-container .project-image {
+        max-height: 480px;
+        margin: 0 auto;
+        width: auto !important;
     }
     .nw-registration {
         display: none;
@@ -53,10 +58,15 @@
 @media (min-width: 480px) and (max-width: 700px) {
     .project-container {
         padding-top: calc(22px + 0.8vw);
-        width: 100%; 
+        max-width: 100%; 
     }
     .project-image {
         width: 100%; 
+    }
+    .multi-container .project-image {
+        max-height: 600px;
+        margin: 0 auto;
+        width: auto !important;
     }
     .nw-registration {
         display: none;
@@ -92,10 +102,16 @@
 @media (min-width: 700px) and (max-width: 944px) {
     .project-container {
         padding-top: calc(22px + 0.8vw);
-        width: 100%; 
+        max-width: 100%; 
     }
     .project-image {
         width: 100%; 
+    }
+    .multi-container .project-image {
+        max-height: 960px;
+        max-width: 700px;
+        margin: 0 auto;
+        width: auto !important;
     }
     .nw-registration {
         display: none;
@@ -126,10 +142,16 @@
 
 @media (min-width: 944px) and (max-width: 1000px) {
     .project-container {
-        width: 944px;
+        max-width: 944px;
     }
     .project-image {
         width: 100%;
+    }
+    .multi-container .project-image {
+        max-height: 960px;
+        max-width: 944px;
+        margin: 0 auto;
+        width: auto !important;
     }
     .nw-registration {
         display: none;
@@ -156,10 +178,16 @@
 
 @media (min-width: 1000px) {
     .project-container {
-        width: 944px;
+        max-width: 944px;
     }
     .project-image {
         width: 100%;
+    }
+    .multi-container .project-image {
+        max-height: 960px;
+        max-width: 944px;
+        margin: 0 auto;
+        width: auto !important;
     }
     .inside-menu span {
         letter-spacing: 5px;

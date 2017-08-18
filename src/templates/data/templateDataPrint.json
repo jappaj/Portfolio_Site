@@ -4,16 +4,19 @@
             "carousel": [
                 {
                     "imgSrc": "img/Print/CHANNELS/Sea/Sea960.jpg",
+                    "LRimgSrc": "img/Print/CHANNELS/Sea/Sea960low.jpg",
                     "HRimgSrc": "img/Print/CHANNELS/Sea/Sea1920.jpg",
                     "imgTitle": "CHANNELS - Sea"
                 },
                 {
                     "imgSrc": "img/Print/CHANNELS/Road/Road960.jpg",
+                    "LRimgSrc": "img/Print/CHANNELS/Road/Road960low.jpg",
                     "HRimgSrc": "img/Print/CHANNELS/Road/Road1920.jpg",
                     "imgTitle": "CHANNELS - Road"
                 },
                 {
                     "imgSrc": "img/Print/CHANNELS/Rail/Rail960.jpg",
+                    "LRimgSrc": "img/Print/CHANNELS/Rail/Rail960low.jpg",
                     "HRimgSrc": "img/Print/CHANNELS/Rail/Rail1920.jpg",
                     "imgTitle": "CHANNELS - Rail"
                 }
@@ -26,31 +29,37 @@
             "carousel": [
                 {
                     "imgSrc": "img/Print/Helios/Helios_Rotor960.jpg",
+                    "LRimgSrc": "img/Print/Helios/Helios_Rotor960low.jpg",
                     "HRimgSrc": "img/Print/Helios/Helios_Rotor1920.jpg",
                     "imgTitle": "Helios - Rotor Closeup"
                 },
                 {
                     "imgSrc": "img/Print/Helios/Helios_Look960.jpg",
+                    "LRimgSrc": "img/Print/Helios/Helios_Look960low.jpg",
                     "HRimgSrc": "img/Print/Helios/Helios_Look1920.jpg",
                     "imgTitle": "Helios - Look Closeup"
                 },
                 {
                     "imgSrc": "img/Print/Helios/Helios_Logo960.jpg",
+                    "LRimgSrc": "img/Print/Helios/Helios_Logo960low.jpg",
                     "HRimgSrc": "img/Print/Helios/Helios_Logo1920.jpg",
                     "imgTitle": "Helios - Logo Closeup"
                 },
                 {
                     "imgSrc": "img/Print/Helios/Helios_Colors960.jpg",
+                    "LRimgSrc": "img/Print/Helios/Helios_Colors960low.jpg",
                     "HRimgSrc": "img/Print/Helios/Helios_Colors1920.jpg",
                     "imgTitle": "Helios - Color Closeup"
                 },
                 {
                     "imgSrc": "img/Print/Helios/Helios_Cards960.jpg",
+                    "LRimgSrc": "img/Print/Helios/Helios_Cards960low.jpg",
                     "HRimgSrc": "img/Print/Helios/Helios_Cards1920.jpg",
                     "imgTitle": "Helios - Business Cards Closeup"
                 },
                 {
                     "imgSrc": "img/Print/Helios/Helios_Spine960.jpg",
+                    "LRimgSrc": "img/Print/Helios/Helios_Spine960low.jpg",
                     "HRimgSrc": "img/Print/Helios/Helios_Spine1920.jpg",
                     "imgTitle": "Helios - Guidebook Spine Closeup"
                 }
@@ -63,31 +72,37 @@
             "carousel": [
                 {
                     "imgSrc": "img/Print/ModernArtifacts/M.A_Open960.jpg",
+                    "LRimgSrc": "img/Print/ModernArtifacts/M.A_Open960low.jpg",
                     "HRimgSrc": "img/Print/ModernArtifacts/M.A_Open1920.jpg",
                     "imgTitle": "Modern Artifacts - Open"
                 },
                 {
                     "imgSrc": "img/Print/ModernArtifacts/M.A_Cover960.jpg",
+                    "LRimgSrc": "img/Print/ModernArtifacts/M.A_Cover960low.jpg",
                     "HRimgSrc": "img/Print/ModernArtifacts/M.A_Cover1920.jpg",
                     "imgTitle": "Modern Artifacts - Cover"
                 },
                 {
                     "imgSrc": "img/Print/ModernArtifacts/M.A_Can960.jpg",
+                    "LRimgSrc": "img/Print/ModernArtifacts/M.A_Can960low.jpg",
                     "HRimgSrc": "img/Print/ModernArtifacts/M.A_Can1920.jpg",
                     "imgTitle": "Modern Artifacts - Can"
                 },
                 {
                     "imgSrc": "img/Print/ModernArtifacts/M.A_Wrapper960.jpg",
+                    "LRimgSrc": "img/Print/ModernArtifacts/M.A_Wrapper960low.jpg",
                     "HRimgSrc": "img/Print/ModernArtifacts/M.A_Wrapper1920.jpg",
                     "imgTitle": "Modern Artifacts - Wrapper"
                 },
                 {
                     "imgSrc": "img/Print/ModernArtifacts/M.A_Cards960.jpg",
+                    "LRimgSrc": "img/Print/ModernArtifacts/M.A_Cards960low.jpg",
                     "HRimgSrc": "img/Print/ModernArtifacts/M.A_Cards1920.jpg",
                     "imgTitle": "Modern Artifacts - Cards Index"
                 },
                 {
                     "imgSrc": "img/Print/ModernArtifacts/M.A_Colophon960.jpg",
+                    "LRimgSrc": "img/Print/ModernArtifacts/M.A_Colophon960low.jpg",
                     "HRimgSrc": "img/Print/ModernArtifacts/M.A_Colophon1920.jpg",
                     "imgTitle": "Modern Artifacts - Colophon"
                 }
@@ -100,16 +115,19 @@
             "carousel": [
                 {
                     "imgSrc": "img/Print/Boomerang/Boomerang_Cover960.jpg",
+                    "LRimgSrc": "img/Print/Boomerang/Boomerang_Cover960low.jpg",
                     "HRimgSrc": "img/Print/Boomerang/Boomerang_Cover1920.jpg",
                     "imgTitle": "The Boomerang - Cover"
                 },
                 {
                     "imgSrc": "img/Print/Boomerang/Boomerang_Center960.jpg",
+                    "LRimgSrc": "img/Print/Boomerang/Boomerang_Center960low.jpg",
                     "HRimgSrc": "img/Print/Boomerang/Boomerang_Center1920.jpg",
                     "imgTitle": "The Boomerang - Binding"
                 },
                 {
                     "imgSrc": "img/Print/Boomerang/Boomerang_Spread960.jpg",
+                    "LRimgSrc": "img/Print/Boomerang/Boomerang_Spread960low.jpg",
                     "HRimgSrc": "img/Print/Boomerang/Boomerang_Spread1920.jpg",
                     "imgTitle": "The Boomerang - Spread"
                 }
@@ -122,11 +140,13 @@
             "carousel": [
                 {
                     "imgSrc": "img/Print/UrT/UrT960.jpg",
+                    "LRimgSrc": "img/Print/UrT/UrT960low.jpg",
                     "HRimgSrc": "img/Print/UrT/UrT1920.jpg",
                     "imgTitle": "UrT - Location Image"
                 },
                 {
                     "imgSrc": "img/Print/UrT/UrT_work960.jpg",
+                    "LRimgSrc": "img/Print/UrT/UrT_work960low.jpg",
                     "HRimgSrc": "img/Print/UrT/UrT_work1920.jpg",
                     "imgTitle": "UrT - Studio Image"
                 }
