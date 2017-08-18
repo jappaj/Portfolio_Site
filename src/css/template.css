@@ -53,6 +53,11 @@
         letter-spacing: 0.5px; 
         font-size: calc(9px + 0.8vw);
     }
+    .full-res-text-container {
+        position: absolute;
+        width: 30vw;
+        left: 39vw;
+    }
 }
     
 @media (min-width: 480px) and (max-width: 700px) {
@@ -97,6 +102,11 @@
         letter-spacing: 1px;
         font-size: calc(12px + 0.1vw);
     }
+    .full-res-text-container {
+        position: absolute;
+        width: 30vw;
+        left: 39vw;
+    }
 }
 
 @media (min-width: 700px) and (max-width: 944px) {
@@ -138,6 +148,11 @@
         letter-spacing: 1px;
         font-size: calc(12px + 0.1vw);
     }
+    .full-res-text-container {
+        position: absolute;
+        width: 30vw;
+        left: 39vw;
+    }
 }
 
 @media (min-width: 944px) and (max-width: 1000px) {
@@ -174,6 +189,11 @@
         letter-spacing: 1px;
         font-size: calc(12px + 0.1vw);
     }
+    .full-res-text-container {
+        position: absolute;
+        width: 283px;
+        left: calc(368px + (50vw - 472px));
+    }
 }
 
 @media (min-width: 1000px) {
@@ -197,6 +217,11 @@
         line-height: 13px;
         letter-spacing: 1px;
         font-size: calc(12px + 0.1vw);
+    }
+    .full-res-text-container {
+        position: absolute;
+        width: 283px;
+        left: calc(368px + (50vw - 472px))
     }
 
 }
@@ -328,16 +353,33 @@
     transition: opacity 50ms ease;
 }
 
+.project-title-single {
+    text-decoration: none !important;
+}
+
+.project-title-single:hover {
+    opacity: 1 !important;
+}
+
 .project-title:hover {
     opacity: 0.7;
     transition: opacity 50ms ease;
 }
 
-.project-title-digital {
+.full-res-text {
+    position: relative;
+    word-wrap: normal;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Cousine', sans-serif;
+    font-size: calc(7px + 0.2vw);
+}
+
+.project-title-digital, .full-res-text-digital {
     color: white;
 }
 
-.project-title-print {
+.project-title-print, .full-res-text-print {
     color: black;
 }
 

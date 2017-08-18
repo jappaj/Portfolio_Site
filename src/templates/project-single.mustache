@@ -47,12 +47,17 @@
                     {{#vimeoBuffer}}
                         <div class="vimeo-buffer"></div>
                     {{/vimeoBuffer}}
+                    <div class="full-res-text-container">
+                        <span class="full-res-text full-res-text-{{pageType}}">
+                            Click for full resolution image
+                        </span>
+                    </div>
                     <div class="se-registration se-registration-{{pageType}}">
                         <img src="../../img/reg{{color1}}.png" class="registration-{{color1}}">
                         <img src="../../img/reg{{color2}}.png" class="registration-{{color2}}">
                         <img src="../../img/reg{{color3}}.png" class="registration-{{color3}}">
                     </div>
-                    <span class="project-title project-title-{{pageType}}">
+                    <span class="project-title project-title-{{pageType}} project-title-single">
                         {{projectTitle}}
                     </span>
                     <div class="description-buffer">
