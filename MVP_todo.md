@@ -12,7 +12,7 @@
 * MAYBE LATER header partial should have html head
 * template out page title
 
-* crapify list images
+* STATUS: CRAPIFIED ~~crapify list images~~
 * lazy load equivalent (maybe mouseover?)
 * do something for mobile effect
 
