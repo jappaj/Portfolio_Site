@@ -1,6 +1,7 @@
 node_modules/
 build/
-img/
+img/Digital
+img/Print
 test*
 slick-1.6.0/
-src/html-test/*.html
+*.html
