@@ -43,22 +43,20 @@ module.exports = function (grunt) {
 				collapseWhitespace: true
 			},
 
-			files: [{
-				expand: true,
-				src: ['*.html', 'print/*.html', `${printSinglePrefix}/*.html`, `${digitalSinglePrefix}/*.html`],
-			}]
+			dist: {
+				files: [{
+					expand: true,
+					src: ['*.html', 'print/*.html', `${printSinglePrefix}/*.html`, `${digitalSinglePrefix}/*.html`]
+				}]
+			}
 		},
 		imagemin: {
-			files: [{
-				expand: true,
-				cwd: 'img/',
-				src: ['*.png', '*.svg', '**/*.jpg'],
-				dest: 'build/img/',
-				rename: (src, dest) => {
-					console.log(src);
-					return dest;
-				}
-			}]
+			dist: {
+				files: [{
+					expand: true,
+					src: ['img/*.{png,jpg,gif}', 'img/**/*.jpg'],
+				}]
+			}
 		},
 		exec: {
 			listDigital: {
@@ -121,5 +119,5 @@ module.exports = function (grunt) {
 
 	// Default task(s).
 	grunt.registerTask('default', ['exec', 'concat', 'uglify', 'postcss', 'clean']);
-	grunt.registerTask('prod', ['exec', /* 'htmlmin' ,*/ 'imagemin', 'concat', 'uglify', 'postcss', 'clean']);
+	grunt.registerTask('prod', ['exec', 'htmlmin' , 'imagemin', 'concat', 'uglify', 'postcss', 'clean']);
 };
